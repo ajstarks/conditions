@@ -7,7 +7,7 @@
 
 	Written and maintained by Stephen Ramsay
 
-	Last Modified: Fri Nov 25 16:12:18 CST 2011
+	Last Modified: Fri Nov 25 16:37:06 CST 2011
 
 	Copyright © 2011 by Stephen Ramsay
 
@@ -43,20 +43,20 @@ const VERS = "1.3.0"
 
 type Weather struct {
 	Observation_time    string `xml:"current_observation>observation_time"`
-	Full								string `xml:"current_observation>display_location>full"`
+	Full                string `xml:"current_observation>display_location>full"`
 	Station_id          string `xml:"current_observation>station_id"`
 	Weather             string `xml:"current_observation>weather"`
 	Temperature_string  string `xml:"current_observation>temperature_string"`
 	Relative_humidity   string `xml:"current_observation>relative_humidity"`
 	Wind_string         string `xml:"current_observation>wind_string"`
-	Pressure_mb					string `xml:"current_observation>pressure_mb"`
-	Pressure_in					string `xml:"current_observation>pressure_in"`
-	Pressure_trend			string `xml:"current_observation>pressure_trend"`
+	Pressure_mb         string `xml:"current_observation>pressure_mb"`
+	Pressure_in         string `xml:"current_observation>pressure_in"`
+	Pressure_trend      string `xml:"current_observation>pressure_trend"`
 	Dewpoint_string     string `xml:"current_observation>dewpoint_string"`
 	Heat_index_string   string `xml:"current_observation>heat_index_string"`
 	Windchill_string    string `xml:"current_observation>windchill_string"`
 	Visibility_mi       string `xml:"current_observation>visibility_mi"`
-	Precip_today_string	string `xml:"current_observation>precip_today_string"`
+	Precip_today_string string `xml:"current_observation>precip_today_string"`
 }
 
 func main() {
