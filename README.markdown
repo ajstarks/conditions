@@ -4,7 +4,7 @@ Conditions
 
 Conditions is a suite of small command-line applications that retrieve weather data from [Weather Underground](http://www.wunderground.com).  The programs are designed to be extremely fast and generally conformant with the [UNIX philosophy](http://en.wikipedia.org/wiki/Unix_philosophy).
 
-Please note that conditions is a bit unstable at the moment.  I am redesigning the system to comply with the new wunderground API.
+Please note that conditions is a bit unstable at the moment.  I am redesigning the system to comply with the new Wunderground API.
 
 Description
 -----------
@@ -31,8 +31,8 @@ Building Conditions
 
 Conditions is written in [Go](http://golang.org), and thus requires a working Go compiler.  Assuming you have one of those:
 
-cd src
-make
+	cd src
+	make
 
 License(s)
 ---------
