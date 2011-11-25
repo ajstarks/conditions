@@ -37,7 +37,7 @@ import (
 	"github.com/jteeuwen/go-pkg-optarg"
 )
 
-const URLstem = "http://api.wunderground.com/api/" + api_key + "/conditions/q/"
+const URLstem = "http://api.wunderground.com/api/bc5deaeccb858c43/conditions/q/"
 
 const VERS = "1.3.0"
 
