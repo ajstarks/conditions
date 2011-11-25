@@ -2,7 +2,7 @@
 Conditions
 ==========
 
-Conditions is a suite of small command-line applications that retrieve weather data from [Weather Underground][http://www.wunderground.com].  The programs are designed to be extremely fast and generally conformant with the [UNIX philosophy][http://en.wikipedia.org/wiki/Unix_philosophy].
+Conditions is a suite of small command-line applications that retrieve weather data from [Weather Underground](http://www.wunderground.com).  The programs are designed to be extremely fast and generally conformant with the [UNIX philosophy](http://en.wikipedia.org/wiki/Unix_philosophy).
 
 Please note that conditions is a bit unstable at the moment.  I am redesigning the system to comply with the new wunderground API.
 
@@ -29,7 +29,7 @@ All three commands understand the following switches:
 Building Conditions
 -------------------
 
-Conditions is written in [Go][http://golang.org], and thus requires a working Go compiler.  Assuming you have one of those:
+Conditions is written in [Go](http://golang.org), and thus requires a working Go compiler.  Assuming you have one of those:
 
 cd src
 make
@@ -43,11 +43,11 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License along with this program.  If not, see [http://www.gnu.org/licenses/](http://www.gnu.org/licenses/).
 
-Data courtesy of Weather Underground, Inc. (WUI) is subject to the [Weather Underground API Terms and Conditions of Use][http://www.wunderground.com/weather/api/d/terms.html].  The author of this software is not affiliated with WUI, and the software is neither sponsored nor endorsed by WUI.
+Data courtesy of Weather Underground, Inc. (WUI) is subject to the [Weather Underground API Terms and Conditions of Use](http://www.wunderground.com/weather/api/d/terms.html).  The author of this software is not affiliated with WUI, and the software is neither sponsored nor endorsed by WUI.
 
 Thanks
 ------
 
-Conditions was heavily inspired -- and indeed, might be considered a clean-room implementation of -- Jeremy Stanley's [weather][http://fungi.yuggoth.org/weather/].  This is a lovely Python script that does more-or-less the same thing as conditions.  I reimplemented the system because Stanley's had stopped working and I wanted a program that was faster.
+Conditions was heavily inspired -- and indeed, might be considered a clean-room implementation of -- Jeremy Stanley's [weather](http://fungi.yuggoth.org/weather/).  This is a lovely Python script that does more-or-less the same thing as conditions.  I reimplemented the system because Stanley's had stopped working and I wanted a program that was faster.
