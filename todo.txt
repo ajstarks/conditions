@@ -1,0 +1,3 @@
+
+. Respond appropriately when city has no weather stations
+. Add man page

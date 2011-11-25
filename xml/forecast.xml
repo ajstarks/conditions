@@ -1,0 +1,652 @@
+<?xml version="1.0" ?>
+<forecast>
+	<termsofservice link="http://www.wunderground.com/members/tos.asp#api" />
+	<txt_forecast>
+  <date>1:26 PM CDT</date>
+  <number>2</number>
+  <forecastday>
+  <period>1</period>
+  <icon>partlycloudy</icon>
+	 <icons>
+  <icon_set name="Default">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/a/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Smiley">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/b/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Generic">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/c/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Old School">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/d/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Cartoon">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/e/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Mobile">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/f/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Simple">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/g/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Contemporary">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/h/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Helen">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/i/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Incredible">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/k/partlycloudy.gif</icon_url>
+	 </icon_set>
+	 </icons>
+  <title>This Afternoon</title>
+  <fcttext>Breezy. Partly cloudy. Highs in the lower 70s. Temperature steady or slowly falling through late afternoon. North winds 20 to 25 mph with gusts to around 35 mph. </fcttext>
+  </forecastday>
+  <forecastday>
+  <period>2</period>
+  <icon>nt_cloudy</icon>
+	 <icons>
+  <icon_set name="Default">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/a/nt_cloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Smiley">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/b/nt_cloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Generic">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/c/nt_cloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Old School">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/d/nt_cloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Cartoon">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/e/nt_cloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Mobile">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/f/nt_cloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Simple">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/g/nt_cloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Contemporary">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/h/nt_cloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Helen">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/i/nt_cloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Incredible">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/k/nt_cloudy.gif</icon_url>
+	 </icon_set>
+	 </icons>
+  <title>Tonight</title>
+  <fcttext>Windy. Mostly cloudy. Chance of showers in the evening...then slight chance of showers after midnight. Colder. Lows in the upper 30s. Northwest winds 25 to 30 mph with gusts to around 40 mph. Chance of showers 40 percent. </fcttext>
+  </forecastday>
+  <forecastday>
+  <period>3</period>
+  <icon>partlycloudy</icon>
+	 <icons>
+  <icon_set name="Default">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/a/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Smiley">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/b/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Generic">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/c/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Old School">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/d/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Cartoon">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/e/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Mobile">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/f/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Simple">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/g/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Contemporary">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/h/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Helen">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/i/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Incredible">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/k/partlycloudy.gif</icon_url>
+	 </icon_set>
+	 </icons>
+  <title>Monday</title>
+  <fcttext>Windy. Partly cloudy in the morning then clearing. Colder. Highs in the upper 40s. Northwest winds 20 to 30 mph with gusts to around 35 mph. </fcttext>
+  </forecastday>
+  <forecastday>
+  <period>4</period>
+  <icon>nt_sunny</icon>
+	 <icons>
+  <icon_set name="Default">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/a/nt_sunny.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Smiley">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/b/nt_sunny.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Generic">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/c/nt_sunny.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Old School">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/d/nt_sunny.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Cartoon">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/e/nt_sunny.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Mobile">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/f/nt_sunny.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Simple">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/g/nt_sunny.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Contemporary">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/h/nt_sunny.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Helen">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/i/nt_sunny.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Incredible">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/k/nt_sunny.gif</icon_url>
+	 </icon_set>
+	 </icons>
+  <title>Monday Night</title>
+  <fcttext>Mostly clear. Lows in the lower 30s. Southwest winds around 10 mph. </fcttext>
+  </forecastday>
+  <forecastday>
+  <period>5</period>
+  <icon>partlycloudy</icon>
+	 <icons>
+  <icon_set name="Default">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/a/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Smiley">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/b/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Generic">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/c/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Old School">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/d/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Cartoon">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/e/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Mobile">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/f/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Simple">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/g/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Contemporary">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/h/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Helen">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/i/partlycloudy.gif</icon_url>
+	 </icon_set>
+  <icon_set name="Incredible">
+	 <icon_url>http://icons-ecast.wxug.com/i/c/k/partlycloudy.gif</icon_url>
+	 </icon_set>
+	 </icons>
+  <title>Tuesday</title>
+  <fcttext>Mostly sunny. Warmer. Highs in the mid 60s. Southwest winds 10 to 15 mph. </fcttext>
+  </forecastday>
+	</txt_forecast>
+<simpleforecast>
+  <forecastday>
+  <period>1</period>
+  <date>
+  <epoch>1301886001</epoch>
+  <pretty_short>10:00 PM CDT</pretty_short>
+  <pretty>10:00 PM CDT on April 03, 2011</pretty>
+  <day>3</day>
+  <month>4</month>
+  <year>2011</year>
+  <yday>92</yday>
+  <hour>22</hour>
+  <min>00</min>
+  <sec>1</sec>
+  <isdst>1</isdst>
+  <monthname>April</monthname>
+  <weekday_short></weekday_short>
+  <weekday>Sunday</weekday>
+  <ampm>PM</ampm>
+  <tz_short>CDT</tz_short>
+  <tz_long>America/Chicago</tz_long>
+</date>
+            <high>
+              <fahrenheit>70</fahrenheit>
+              <celsius>21</celsius>
+            </high>
+            <low>
+              <fahrenheit>36</fahrenheit>
+              <celsius>2</celsius>
+            </low>
+            <conditions>Partly Cloudy</conditions>
+            <icon>partlycloudy</icon>
+	        <icons>
+    	        <icon_set name="Default">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/a/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Smiley">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/b/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Generic">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/c/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Old School">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/d/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Cartoon">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/e/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Mobile">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/f/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Simple">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/g/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Contemporary">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/h/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Helen">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/i/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Incredible">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/k/partlycloudy.gif</icon_url>
+	            </icon_set>
+	        </icons>
+            <skyicon>partlycloudy</skyicon>
+			<pop>10</pop>
+        </forecastday>
+
+
+
+
+
+
+        <forecastday>
+            <period>2</period>
+            <date>
+  <epoch>1301972401</epoch>
+  <pretty_short>10:00 PM CDT</pretty_short>
+  <pretty>10:00 PM CDT on April 04, 2011</pretty>
+  <day>4</day>
+  <month>4</month>
+  <year>2011</year>
+  <yday>93</yday>
+  <hour>22</hour>
+  <min>00</min>
+  <sec>1</sec>
+  <isdst>1</isdst>
+  <monthname>April</monthname>
+  <weekday_short></weekday_short>
+  <weekday>Monday</weekday>
+  <ampm>PM</ampm>
+  <tz_short>CDT</tz_short>
+  <tz_long>America/Chicago</tz_long>
+</date>
+            <high>
+              <fahrenheit>49</fahrenheit>
+              <celsius>9</celsius>
+            </high>
+            <low>
+              <fahrenheit>31</fahrenheit>
+              <celsius>-1</celsius>
+            </low>
+            <conditions>Partly Cloudy</conditions>
+            <icon>partlycloudy</icon>
+	        <icons>
+    	        <icon_set name="Default">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/a/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Smiley">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/b/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Generic">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/c/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Old School">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/d/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Cartoon">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/e/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Mobile">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/f/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Simple">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/g/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Contemporary">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/h/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Helen">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/i/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Incredible">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/k/partlycloudy.gif</icon_url>
+	            </icon_set>
+	        </icons>
+            <skyicon>partlycloudy</skyicon>
+			<pop>10</pop>
+        </forecastday>
+
+
+
+
+
+
+        <forecastday>
+            <period>3</period>
+            <date>
+  <epoch>1302048001</epoch>
+  <pretty_short>7:00 PM CDT</pretty_short>
+  <pretty>7:00 PM CDT on April 05, 2011</pretty>
+  <day>5</day>
+  <month>4</month>
+  <year>2011</year>
+  <yday>94</yday>
+  <hour>19</hour>
+  <min>00</min>
+  <sec>1</sec>
+  <isdst>1</isdst>
+  <monthname>April</monthname>
+  <weekday_short></weekday_short>
+  <weekday>Tuesday</weekday>
+  <ampm>PM</ampm>
+  <tz_short>CDT</tz_short>
+  <tz_long>America/Chicago</tz_long>
+</date>
+            <high>
+              <fahrenheit>67</fahrenheit>
+              <celsius>19</celsius>
+            </high>
+            <low>
+              <fahrenheit>47</fahrenheit>
+              <celsius>8</celsius>
+            </low>
+            <conditions>Partly Cloudy</conditions>
+            <icon>partlycloudy</icon>
+	        <icons>
+    	        <icon_set name="Default">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/a/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Smiley">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/b/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Generic">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/c/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Old School">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/d/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Cartoon">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/e/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Mobile">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/f/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Simple">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/g/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Contemporary">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/h/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Helen">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/i/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Incredible">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/k/partlycloudy.gif</icon_url>
+	            </icon_set>
+	        </icons>
+            <skyicon>partlycloudy</skyicon>
+			<pop>5</pop>
+        </forecastday>
+
+
+
+
+
+
+        <forecastday>
+            <period>4</period>
+            <date>
+  <epoch>1302134401</epoch>
+  <pretty_short>7:00 PM CDT</pretty_short>
+  <pretty>7:00 PM CDT on April 06, 2011</pretty>
+  <day>6</day>
+  <month>4</month>
+  <year>2011</year>
+  <yday>95</yday>
+  <hour>19</hour>
+  <min>00</min>
+  <sec>1</sec>
+  <isdst>1</isdst>
+  <monthname>April</monthname>
+  <weekday_short></weekday_short>
+  <weekday>Wednesday</weekday>
+  <ampm>PM</ampm>
+  <tz_short>CDT</tz_short>
+  <tz_long>America/Chicago</tz_long>
+</date>
+            <high>
+              <fahrenheit>63</fahrenheit>
+              <celsius>17</celsius>
+            </high>
+            <low>
+              <fahrenheit>43</fahrenheit>
+              <celsius>6</celsius>
+            </low>
+            <conditions>Partly Cloudy</conditions>
+            <icon>partlycloudy</icon>
+	        <icons>
+    	        <icon_set name="Default">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/a/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Smiley">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/b/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Generic">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/c/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Old School">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/d/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Cartoon">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/e/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Mobile">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/f/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Simple">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/g/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Contemporary">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/h/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Helen">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/i/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Incredible">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/k/partlycloudy.gif</icon_url>
+	            </icon_set>
+	        </icons>
+            <skyicon>partlycloudy</skyicon>
+			<pop>7</pop>
+        </forecastday>
+
+
+
+
+
+
+        <forecastday>
+            <period>5</period>
+            <date>
+  <epoch>1302220801</epoch>
+  <pretty_short>7:00 PM CDT</pretty_short>
+  <pretty>7:00 PM CDT on April 07, 2011</pretty>
+  <day>7</day>
+  <month>4</month>
+  <year>2011</year>
+  <yday>96</yday>
+  <hour>19</hour>
+  <min>00</min>
+  <sec>1</sec>
+  <isdst>1</isdst>
+  <monthname>April</monthname>
+  <weekday_short></weekday_short>
+  <weekday>Thursday</weekday>
+  <ampm>PM</ampm>
+  <tz_short>CDT</tz_short>
+  <tz_long>America/Chicago</tz_long>
+</date>
+            <high>
+              <fahrenheit>63</fahrenheit>
+              <celsius>17</celsius>
+            </high>
+            <low>
+              <fahrenheit>43</fahrenheit>
+              <celsius>6</celsius>
+            </low>
+            <conditions>Chance of Rain</conditions>
+            <icon>chancerain</icon>
+	        <icons>
+    	        <icon_set name="Default">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/a/chancerain.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Smiley">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/b/chancerain.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Generic">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/c/chancerain.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Old School">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/d/chancerain.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Cartoon">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/e/chancerain.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Mobile">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/f/chancerain.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Simple">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/g/chancerain.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Contemporary">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/h/chancerain.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Helen">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/i/chancerain.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Incredible">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/k/chancerain.gif</icon_url>
+	            </icon_set>
+	        </icons>
+            <skyicon>mostlycloudy</skyicon>
+			<pop>24</pop>
+        </forecastday>
+
+
+
+
+
+
+        <forecastday>
+            <period>6</period>
+            <date>
+  <epoch>1302307201</epoch>
+  <pretty_short>7:00 PM CDT</pretty_short>
+  <pretty>7:00 PM CDT on April 08, 2011</pretty>
+  <day>8</day>
+  <month>4</month>
+  <year>2011</year>
+  <yday>97</yday>
+  <hour>19</hour>
+  <min>00</min>
+  <sec>1</sec>
+  <isdst>1</isdst>
+  <monthname>April</monthname>
+  <weekday_short></weekday_short>
+  <weekday>Friday</weekday>
+  <ampm>PM</ampm>
+  <tz_short>CDT</tz_short>
+  <tz_long>America/Chicago</tz_long>
+</date>
+            <high>
+              <fahrenheit>65</fahrenheit>
+              <celsius>18</celsius>
+            </high>
+            <low>
+              <fahrenheit>47</fahrenheit>
+              <celsius>8</celsius>
+            </low>
+            <conditions>Partly Cloudy</conditions>
+            <icon>partlycloudy</icon>
+	        <icons>
+    	        <icon_set name="Default">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/a/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Smiley">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/b/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Generic">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/c/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Old School">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/d/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Cartoon">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/e/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Mobile">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/f/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Simple">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/g/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Contemporary">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/h/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Helen">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/i/partlycloudy.gif</icon_url>
+	            </icon_set>
+    	        <icon_set name="Incredible">
+	                <icon_url>http://icons-ecast.wxug.com/i/c/k/partlycloudy.gif</icon_url>
+	            </icon_set>
+	        </icons>
+            <skyicon>partlycloudy</skyicon>
+			<pop>10</pop>
+        </forecastday>
+
+
+
+
+
+
+
+
+
+</simpleforecast>
+<moon_phase>
+        <percentIlluminated>0</percentIlluminated>
+        <ageOfMoon>0</ageOfMoon>
+		<current_time>
+			<hour>14</hour>
+			<minute>29</minute>
+		</current_time>
+        <sunset>
+            <hour>19</hour>
+            <minute>53</minute>
+        </sunset>
+        <sunrise>
+            <hour>7</hour>
+            <minute>07</minute>
+        </sunrise>
+</moon_phase>
+</forecast>
+
