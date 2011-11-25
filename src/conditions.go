@@ -9,7 +9,7 @@
 
 	Last Modified: Fri Nov 25 16:12:18 CST 2011
 
-	Copyright (c) 2011 by Stephen Ramsay
+	Copyright © 2011 by Stephen Ramsay
 
 	conditions is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by

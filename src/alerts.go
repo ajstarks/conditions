@@ -8,7 +8,7 @@
 
 	Last Modified: Fri Jul 15 23:55:17 CDT 2011
 
-	Copyright (c) 2011 by Stephen Ramsay
+	Copyright © 2011 by Stephen Ramsay
 
 	alerts is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by

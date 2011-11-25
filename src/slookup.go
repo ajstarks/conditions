@@ -9,7 +9,7 @@
 
 	Last Modified: Wed Aug 03 14:02:45 CDT 2011
 
-	Copyright (c) 2011 by Stephen Ramsay
+	Copyright © 2011 by Stephen Ramsay
 
 	slookup is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by

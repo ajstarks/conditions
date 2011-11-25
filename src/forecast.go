@@ -9,7 +9,7 @@
 
 	Last Modified: Fri Jul 15 23:56:53 CDT 2011
 
-	Copyright (c) 2011 by Stephen Ramsay
+	Copyright © 2011 by Stephen Ramsay
 
 	forecast is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
