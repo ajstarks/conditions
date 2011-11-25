@@ -7,7 +7,7 @@
 
 	Written and maintained by Stephen Ramsay
 
-	Last Modified: Fri Jul 15 23:59:07 CDT 2011
+	Last Modified: Fri Nov 25 16:12:18 CST 2011
 
 	Copyright (c) 2011 by Stephen Ramsay
 
@@ -37,24 +37,25 @@ import (
 	"github.com/jteeuwen/go-pkg-optarg"
 )
 
-const URLstem = "http://api.wunderground.com/auto/wui/geo/WXCurrentObXML/index.xml?query="
+const URLstem = "http://api.wunderground.com/api/bc5deaeccb858c43/conditions/q/"
 
-const VERS = "1.2.1"
+const VERS = "1.3.0"
 
 type Weather struct {
-	Observation_time   string
-	City               string `xml:"display_location>city"`
-	State              string `xml:"display_location>state"`
-	Station_id         string
-	Weather            string
-	Temperature_string string
-	Relative_humidity  string
-	Wind_string        string
-	Pressure_string    string
-	Dewpoint_string    string
-	Heat_index_string  string
-	Windchill_string   string
-	Visibility_mi      string
+	Observation_time   string `xml:"current_observation>observation_time"`
+	Full							 string `xml:"current_observation>display_location>full"`
+	Station_id         string `xml:"current_observation>station_id"`
+	Weather            string `xml:"current_observation>weather"`
+	Temperature_string string `xml:"current_observation>temperature_string"`
+	Relative_humidity  string `xml:"current_observation>relative_humidity"`
+	Wind_string        string `xml:"current_observation>wind_string"`
+	Pressure_mb				 string `xml:"current_observation>pressure_mb"`
+	Pressure_in				 string `xml:"current_observation>pressure_in"`
+	Pressure_trend		 string `xml:"current_observation>pressure_trend"`
+	Dewpoint_string    string `xml:"current_observation>dewpoint_string"`
+	Heat_index_string  string `xml:"current_observation>heat_index_string"`
+	Windchill_string   string `xml:"current_observation>windchill_string"`
+	Visibility_mi      string `xml:"current_observation>visibility_mi"`
 }
 
 func main() {
@@ -63,7 +64,7 @@ func main() {
 	optarg.Add("h", "help", "Print this message", false)
 	optarg.Add("V", "version", "Print version number", false)
 
-	var station = "KLNK"
+	var station = "KLNK.xml"
 	var help, version bool
 	var URL string
 
@@ -117,13 +118,20 @@ func main() {
 }
 
 func printWeather(weather *Weather) {
-	fmt.Println("Current conditions at " + weather.City + ", " + weather.State + " (" + weather.Station_id + ")")
+	fmt.Println("Current conditions at " + weather.Full + " (" + weather.Station_id + ")")
 	fmt.Println(weather.Observation_time)
 	fmt.Println("   Temperature: " + weather.Temperature_string)
 	fmt.Println("   Sky Conditions: " + weather.Weather)
 	fmt.Println("   Wind: " + weather.Wind_string)
 	fmt.Println("   Relative humidity: " + weather.Relative_humidity)
-	fmt.Println("   Pressure: " + weather.Pressure_string)
+	switch weather.Pressure_trend {
+	case "+":
+		fmt.Println("   Pressure: " + weather.Pressure_in + " in (" + weather.Pressure_mb + " mb) and rising")
+	case "-":
+		fmt.Println("   Pressure: " + weather.Pressure_in + " in (" + weather.Pressure_mb + " mb) and falling")
+	case "0":
+		fmt.Println("   Pressure: " + weather.Pressure_in + " in (" + weather.Pressure_mb + " mb) and holding steady")
+	}
 	fmt.Println("   Dewpoint: " + weather.Dewpoint_string)
 	if weather.Heat_index_string != "NA" {
 		fmt.Println("   Heat Index: " + weather.Heat_index_string)
