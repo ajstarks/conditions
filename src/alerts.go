@@ -6,7 +6,7 @@
 
 	Written and maintained by Stephen Ramsay
 
-	Last Modified: Fri Jul 15 23:55:17 CDT 2011
+	Last Modified: Fri Nov 25 16:39:46 CST 2011
 
 	Copyright © 2011 by Stephen Ramsay
 
@@ -37,7 +37,7 @@ import (
 	"github.com/jteeuwen/go-pkg-optarg"
 )
 
-const URLstem = "http://api.wunderground.com/auto/wui/geo/AlertsXML/index.xml?query="
+const URLstem = "http://api.wunderground.com/api/" + api_key + "/alerts/q/"
 
 const VERS = "1.2.1"
 
@@ -101,7 +101,7 @@ func main() {
 		station_id = station_id + station_components[i]
 	}
 
-	URL = URLstem + station_id
+	URL = URLstem + station_id + ".xml"
 
 	res, err := http.Get(URL)
 
