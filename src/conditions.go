@@ -65,7 +65,7 @@ func main() {
 	optarg.Add("h", "help", "Print this message", false)
 	optarg.Add("V", "version", "Print version number", false)
 
-	var station = "KLNK.xml"
+	var station = "KLNK"
 	var help, version bool
 	var URL string
 
@@ -105,7 +105,7 @@ func main() {
 		station_id = station_id + station_components[i]
 	}
 
-	URL = URLstem + station_id
+	URL = URLstem + station_id + ".xml"
 
 	res, err := http.Get(URL)
 

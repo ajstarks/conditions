@@ -11,7 +11,6 @@ Description
 
 Conditions consists of forecast command-line applications.
 
-
 * _conditions_ reports the current weather conditions.
 
 * _forecast_ gives the current forecast.
@@ -22,7 +21,7 @@ Conditions consists of forecast command-line applications.
 	
 All three commands understand the following switches:
 
-* -s location (which can be a city, a state, a (U.S. or Canadian zip code), a 3- or 4-letter airport code, or lat,long).
+* -s location (which can be a city, a state, a (U.S. or Canadian zip code), a 3- or 4-letter airport code, or lat,long).  Default location is KLNK (Lincoln, NE).  See note in "Building Conditions" below.
 * -h help
 * -V version
 
@@ -33,6 +32,10 @@ Conditions is written in [Go](http://golang.org), and thus requires a working Go
 
 	cd src
 	make
+
+Note that the default location for conditions is "KLNK" (Lincoln, NE).  You can change this by altering the contents of this line in each file:
+
+	var station = "KLNK"
 
 License(s)
 ---------
