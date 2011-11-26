@@ -31,28 +31,22 @@ import (
 	"fmt"
 	"http"
 	"os"
-	"strconv"
 	"strings"
 	"xml"
 	"github.com/jteeuwen/go-pkg-optarg"
 )
 
-const URLstem = "http://api.wunderground.com/api/" + api_key + "/alerts/q/"
+const URLstem = "http://api.wunderground.com/api/bc5deaeccb858c43/alerts/q/"
 
-const VERS = "1.2.1"
-
-type Alerts struct {
-	Alert Alert
-}
+const VERS = "1.3.0"
 
 type Alert struct {
-	Count     string      `xml:"attr"`
-	Alertitem []Alertitem `xml:"alertitem"`
+	Description	string `xml:"alert>description"`
+	Message     string `xml:"alert>message"`
 }
 
-type Alertitem struct {
-	Description string
-	Message     string
+type Result struct {
+	Alerts	[]Alert
 }
 
 func main() {
@@ -106,23 +100,21 @@ func main() {
 	res, err := http.Get(URL)
 
 	if err == nil {
-		var alerts Alerts
-		xmlErr := xml.Unmarshal(res.Body, &alerts)
+		var result Result
+		xmlErr := xml.Unmarshal(res.Body, &result)
 		checkError(xmlErr)
-		printWeather(&alerts)
+		printWeather(&result)
 		res.Body.Close()
 	}
 }
 
-func printWeather(alerts *Alerts) {
-	alertCount, err := strconv.Atoi(alerts.Alert.Count)
-	checkError(err)
-	if alertCount == 0 {
+func printWeather(result *Result) {
+	if len(result.Alerts) == 0 {
 		fmt.Println("No active alerts")
 	} else {
-		for i := 0; i < alertCount; i++ {
-			fmt.Println(alerts.Alert.Alertitem[i].Description)
-			fmt.Println(alerts.Alert.Alertitem[i].Message)
+		for i := 0; i < len(result.Alerts); i++ {
+			fmt.Println(result.Alerts[i].Description)
+			fmt.Println(result.Alerts[i].Message)
 		}
 	}
 }

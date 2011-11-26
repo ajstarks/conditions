@@ -1,0 +1,107 @@
+	<current_observation>
+		<credit>Weather Underground NOAA Weather Station</credit>
+		<credit_URL>http://wunderground.com/</credit_URL>
+		<termsofservice link="http://www.wunderground.com/members/tos.asp#api" />
+		<image>
+		<url>http://icons-ecast.wxug.com/graphics/wu2/logo_130x80.png</url>
+		<title>Weather Underground</title>
+		<link>http://wunderground.com/</link>
+		</image>
+  <display_location>
+  <full>Lincoln Municipal, NE</full>
+  <city>Lincoln Municipal</city>
+  <state>NE</state>
+  <state_name>Nebraska</state_name>
+  <country>US</country>
+  <country_iso3166>US</country_iso3166>
+  <zip>68524</zip>
+  <latitude>40.85083389</latitude>
+  <longitude>-96.75916290</longitude>
+  <elevation>371.00000000 ft</elevation>
+  </display_location>
+		<observation_location>
+		<full>Lincoln, Nebraska</full>
+		<city>Lincoln</city>
+		<state>Nebraska</state>
+		<country>US</country>
+		<country_iso3166>US</country_iso3166>
+		<latitude>40.84999847</latitude>
+		<longitude>-96.76000214</longitude>
+		<elevation>1217 ft</elevation>
+		</observation_location>
+		<station_id>KLNK</station_id>
+		<observation_time>Last Updated on August 3, 12:54 PM CDT</observation_time>
+		<observation_time_rfc822>Wed, 03 Aug 2011 17:54:00 GMT</observation_time_rfc822>
+		<observation_epoch>1312394040</observation_epoch>
+		<local_time>August 3, 1:03 PM CDT</local_time>
+		<local_time_rfc822>Wed, 03 Aug 2011 18:03:49 GMT</local_time_rfc822>
+		<local_epoch>1312394629</local_epoch>
+		<weather>Clear</weather>
+		<temperature_string>85 F (29 C)</temperature_string>
+		<temp_f>85</temp_f>
+		<temp_c>29</temp_c>
+		<relative_humidity>53%</relative_humidity>
+		<wind_string>From the Variable at 7 MPH </wind_string>
+		<wind_dir>Variable</wind_dir>
+		<wind_degrees>0</wind_degrees>
+		<wind_mph>7</wind_mph>
+		<wind_gust_mph></wind_gust_mph>
+		<pressure_string>29.94 in (1014 mb)</pressure_string>
+		<pressure_mb>1014</pressure_mb>
+		<pressure_in>29.94</pressure_in>
+		<dewpoint_string>66 F (19 C)</dewpoint_string>
+		<dewpoint_f>66</dewpoint_f>
+		<dewpoint_c>19</dewpoint_c>
+		
+		<heat_index_string>87 F (31 C)</heat_index_string>
+		<heat_index_f>87</heat_index_f>
+		<heat_index_c>31</heat_index_c>
+		
+		
+		<windchill_string>NA</windchill_string>
+		<windchill_f>NA</windchill_f>
+		<windchill_c>NA</windchill_c>
+		
+		<visibility_mi>10.0</visibility_mi>
+		<visibility_km>16.1</visibility_km>
+		<icons>
+			<icon_set name="Default">
+				<icon_url>http://icons-ecast.wxug.com/i/c/a/clear.gif</icon_url>
+			</icon_set>
+			<icon_set name="Smiley">
+				<icon_url>http://icons-ecast.wxug.com/i/c/b/clear.gif</icon_url>
+			</icon_set>
+			<icon_set name="Generic">
+				<icon_url>http://icons-ecast.wxug.com/i/c/c/clear.gif</icon_url>
+			</icon_set>
+			<icon_set name="Old School">
+				<icon_url>http://icons-ecast.wxug.com/i/c/d/clear.gif</icon_url>
+			</icon_set>
+			<icon_set name="Cartoon">
+				<icon_url>http://icons-ecast.wxug.com/i/c/e/clear.gif</icon_url>
+			</icon_set>
+			<icon_set name="Mobile">
+				<icon_url>http://icons-ecast.wxug.com/i/c/f/clear.gif</icon_url>
+			</icon_set>
+			<icon_set name="Simple">
+				<icon_url>http://icons-ecast.wxug.com/i/c/g/clear.gif</icon_url>
+			</icon_set>
+			<icon_set name="Contemporary">
+				<icon_url>http://icons-ecast.wxug.com/i/c/h/clear.gif</icon_url>
+			</icon_set>
+			<icon_set name="Helen">
+				<icon_url>http://icons-ecast.wxug.com/i/c/i/clear.gif</icon_url>
+			</icon_set>
+			<icon_set name="Incredible">
+				<icon_url>http://icons-ecast.wxug.com/i/c/k/clear.gif</icon_url>
+			</icon_set>
+		</icons>
+		<icon_url_base>http://icons-ecast.wxug.com/graphics/conds/</icon_url_base>
+		<icon_url_name>.GIF</icon_url_name>
+		<icon>clear</icon>
+		<forecast_url>http://www.wunderground.com/US/NE/Lincoln_Municipal.html</forecast_url>
+		<history_url>http://www.wunderground.com/history/airport/KLNK/2011/8/3/DailyHistory.html</history_url>
+		<ob_url>http://www.wunderground.com/cgi-bin/findweather/getForecast?query=40.84999847,-96.76000214</ob_url>
+	</current_observation>
+
+<!-- 0.043:0 -->

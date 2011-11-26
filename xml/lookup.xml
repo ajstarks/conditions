@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<location type="CITY">
+    <termsofservice link="http://www.wunderground.com/members/tos.asp#api" />
+    <country>US</country>
+    <state>CA</state>
+    <city>San Francisco</city>
+    <tz_short>PDT</tz_short>
+    <tz_unix>America/Los_Angeles</tz_unix>
+    <lat>37.76834106</lat>
+    <lon>-122.39418793</lon>
+    <zip>94107</zip>
+    <magic>1</magic>
+    <wmo>99999</wmo>
+    <requesturl>/US/CA/San_Francisco.html</requesturl>
+    <wuiurl>http://www.wunderground.com/US/CA/San_Francisco.html</wuiurl>
+    <radar>
+        <image_url><![CDATA[http://resize.wunderground.com/cgi-bin/resize_convert?ox=gif&url=radblast/cgi-bin/radar/WUNIDS_composite%3Fcenterlat=37.76834106%26centerlon=-122.39418793%26radius=15%26newmaps=1%26smooth=1]]></image_url>
+        <url><![CDATA[http://www.wunderground.com/radar/radblast.asp?ID=MUX&region=c1&lat=37.76834106&lon=-122.39418793]]></url>
+    </radar>
+    <webcams>
+        <cam>
+            <handle>hlnurse</handle>
+            <camid>hlnurseCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCAHEALD3</assoc_station_id>
+            <link>http://www.healdsburgweather.com</link>
+            <linktext>Healdsburg Weather</linktext>
+            <cameratype>Sony CCD</cameratype>
+            <organization></organization>
+            <neighborhood></neighborhood>
+            <zip>95448</zip>
+            <city>Healdsburg</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18417</hexid>
+            <lat>38.64434814</lat>
+            <lon>-122.88079071</lon>
+            <updated>2011-04-03 15:36:22</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>98e3a3bb71dc3cfb5b1e48df4117394bb19d731c</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/h/l/hlnurse/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/h/l/hlnurse/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/hlnurse/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>Stumptown</handle>
+            <camid>StumptownCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCAGUERN5</assoc_station_id>
+            <link>http://www.stumptown.com</link>
+            <linktext>Stumptown Brewery</linktext>
+            <cameratype>Axis 2420</cameratype>
+            <organization>Stumptown Brewery</organization>
+            <neighborhood>Stumptown Brewery</neighborhood>
+            <zip>95446</zip>
+            <city>Guerneville</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18417</hexid>
+            <lat>38.51407242</lat>
+            <lon>-122.98340607</lon>
+            <updated>2011-04-03 15:36:18</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>b1847b992ccebae047cccb0b5ee19c4d29c314cd</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/t/Stumptown/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/t/Stumptown/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/Stumptown/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>radioranger</handle>
+            <camid>radiorangerCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCAMILLV12</assoc_station_id>
+            <link>http://</link>
+            <linktext></linktext>
+            <cameratype>TV-IP100W</cameratype>
+            <organization></organization>
+            <neighborhood></neighborhood>
+            <zip>94941</zip>
+            <city>Mill Valley</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>2</hexant>
+            <hexid>18777</hexid>
+            <lat>37.91421127</lat>
+            <lon>-122.53314972</lon>
+            <updated>2011-04-03 14:47:23</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>b37b1f20098a19a5e40efd4adb3f3650dc093ad4</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/r/a/radioranger/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/r/a/radioranger/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/radioranger/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>Stevepur</handle>
+            <camid>StevepurCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCACORTE4</assoc_station_id>
+            <link>http://homepage.mac.com/stevepur</link>
+            <linktext></linktext>
+            <cameratype>Creative Live! Cam Optia AF</cameratype>
+            <organization></organization>
+            <neighborhood>Christmas Tree Hill</neighborhood>
+            <zip>94925</zip>
+            <city>Corte Madera</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>2</hexant>
+            <hexid>18777</hexid>
+            <lat>37.92574310</lat>
+            <lon>-122.53371429</lon>
+            <updated>2011-04-03 15:37:15</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>bec29a61bb03a2af817f4f386f1f74d8d9276dd9</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/t/Stevepur/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/t/Stevepur/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/Stevepur/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>jsntg</handle>
+            <camid>jsntgCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCASANFR99</assoc_station_id>
+            <link>http://ob-kc.com</link>
+            <linktext>Ocean Beach Kelly's Cove</linktext>
+            <cameratype>Canon Powershot G2</cameratype>
+            <organization>OB-KC.COM</organization>
+            <neighborhood>Ocean Beach - Kelly's Cove</neighborhood>
+            <zip>94121</zip>
+            <city>San Francisco</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>2</hexant>
+            <hexid>18777</hexid>
+            <lat>37.77495575</lat>
+            <lon>-122.51038361</lon>
+            <updated>2011-04-03 15:36:14</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>33e6ccdc39408b351a2e640e7562c7519ebefa08</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/j/s/jsntg/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/j/s/jsntg/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/jsntg/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>SerenoDelMar</handle>
+            <camid>SerenoDelMarCAM1</camid>
+            <camindex>1</camindex>
+            <type>url|1</type>
+            <assoc_station_id>KCABODEG3</assoc_station_id>
+            <imageurl>http://home.comcast.net/~leonardweber/CoastCam/Webcam.jpg</imageurl>
+            <link>http://home.comcast.net/~leonardweber/site/?/home/</link>
+            <linktext>West Facing Camera</linktext>
+            <cameratype>Dynex 1.3MP Webcam</cameratype>
+            <organization></organization>
+            <neighborhood>Sereno Del Mar</neighborhood>
+            <zip>94923</zip>
+            <city>Bodega Bay</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>0</hexant>
+            <hexid>18777</hexid>
+            <lat>38.38171768</lat>
+            <lon>-123.07574463</lon>
+            <updated>2011-04-03 15:36:51</updated>
+            <downloaded>2011-04-03 15:37:01</downloaded>
+            <hash>a22cbb23725e26c2c34f73531d80b65c9eb3b23e</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/e/SerenoDelMar/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/e/SerenoDelMar/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/SerenoDelMar/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>SerenoDelMar</handle>
+            <camid>SerenoDelMarCAM2</camid>
+            <camindex>2</camindex>
+            <type>url|1</type>
+            <assoc_station_id></assoc_station_id>
+            <imageurl>http://home.comcast.net/~leonardweber/CoastCam/Webcam.jpg</imageurl>
+            <link>http://home.comcast.net/~leonardweber/site/?/home/</link>
+            <linktext>Sereno Del Mar WebCam</linktext>
+            <cameratype>Dynex 1.3MP</cameratype>
+            <organization></organization>
+            <neighborhood>Sereno Del Mar</neighborhood>
+            <zip>94923</zip>
+            <city>Bodega Bay</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>0</hexant>
+            <hexid>18777</hexid>
+            <lat>38.38130951</lat>
+            <lon>-123.07595825</lon>
+            <updated>2011-04-03 15:37:00</updated>
+            <downloaded>2011-04-03 15:37:15</downloaded>
+            <hash>a22cbb23725e26c2c34f73531d80b65c9eb3b23e</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/e/SerenoDelMar/2/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/e/SerenoDelMar/2/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/SerenoDelMar/2/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>dpDev</handle>
+            <camid>dpDevCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCASANTA177</assoc_station_id>
+            <imageurl>http://dpdev.freehostia.com/img/latest.jpg</imageurl>
+            <link>http://</link>
+            <linktext></linktext>
+            <cameratype>WVC54GCA</cameratype>
+            <organization></organization>
+            <neighborhood>SRJC</neighborhood>
+            <zip>95404</zip>
+            <city>Santa Rosa</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>1</hexant>
+            <hexid>18777</hexid>
+            <lat>38.46298981</lat>
+            <lon>-122.71242523</lon>
+            <updated>2011-04-03 15:29:33</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>a3e9695a8de308d5b242950c8a72bcb345392664</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/d/p/dpDev/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/d/p/dpDev/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/dpDev/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>WunderYakuza</handle>
+            <camid>WunderYakuzaCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCASANFR14</assoc_station_id>
+            <link>http://www.wunderground.com</link>
+            <linktext>Weather Underground</linktext>
+            <cameratype>AXIS 207W</cameratype>
+            <organization>The Weather Underground</organization>
+            <neighborhood>China Basin Landing</neighborhood>
+            <zip>94107</zip>
+            <city>San Francisco</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.77627945</lat>
+            <lon>-122.39215851</lon>
+            <updated>2011-04-03 15:34:02</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>eb7f9b1a5fb537bcef616affc146be2e73d34df8</hash>
+            <isrecent>1</isrecent>
+            <frequency>60</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/w/u/WunderYakuza/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/w/u/WunderYakuza/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/WunderYakuza/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>admin</handle>
+            <camid>adminCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCASANFR70</assoc_station_id>
+            <link>http://www.wunderground.com/</link>
+            <linktext>Visit the Underground Weather</linktext>
+            <cameratype>Axis 207W</cameratype>
+            <organization></organization>
+            <neighborhood>Sunnyside</neighborhood>
+            <zip>94131</zip>
+            <city>San Francisco</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.73237610</lat>
+            <lon>-122.44290161</lon>
+            <updated>2011-04-03 15:32:14</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>14702c87c468d89bf9823c4fff296c70ffb47d73</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/a/d/admin/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/a/d/admin/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/admin/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>SFSeaCliff</handle>
+            <camid>SFSeaCliffCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCASANFR60</assoc_station_id>
+            <link>http://</link>
+            <linktext></linktext>
+            <cameratype>airlink101</cameratype>
+            <organization></organization>
+            <neighborhood></neighborhood>
+            <zip>94121</zip>
+            <city>San Francisco</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.78621292</lat>
+            <lon>-122.49169922</lon>
+            <updated>2011-04-03 15:37:15</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>a5f8ec978262c531db00d6a2d908ace01618ec7c</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/f/SFSeaCliff/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/f/SFSeaCliff/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/SFSeaCliff/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>DiscoBayRichard</handle>
+            <camid>DiscoBayRichardCAM3</camid>
+            <camindex>3</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCADISCO2</assoc_station_id>
+            <link>http://www.richardwyeth.com/KCADISCO2.htm</link>
+            <linktext>KCADISCO2</linktext>
+            <cameratype>Dlink and image salsa</cameratype>
+            <organization>KCADISCO2 Weatherstation</organization>
+            <neighborhood>Discovery Bay California</neighborhood>
+            <zip>94505</zip>
+            <city>Discovery Bay</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>2</hexant>
+            <hexid>18778</hexid>
+            <lat>37.89699554</lat>
+            <lon>-121.60454559</lon>
+            <updated>2011-04-03 15:36:28</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>5e9487ae1f0091abc8fdfff48ffdbc314e164166</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/d/i/DiscoBayRichard/3/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/d/i/DiscoBayRichard/3/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/DiscoBayRichard/3/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>DBeck</handle>
+            <camid>DBeckCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCAPLEAS8</assoc_station_id>
+            <link>http://</link>
+            <linktext></linktext>
+            <cameratype>Speco Dome</cameratype>
+            <organization></organization>
+            <neighborhood>Mt. Diablo</neighborhood>
+            <zip>94523</zip>
+            <city>Pleasant Hill</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.93607330</lat>
+            <lon>-122.08470917</lon>
+            <updated>2011-04-03 15:36:35</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>e6f5413cd97b5cdf8235771ca1d98a8748c8e17f</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/d/b/DBeck/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/d/b/DBeck/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/DBeck/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>aogden</handle>
+            <camid>aogdenCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCANAPA6</assoc_station_id>
+            <link>http://www.napalife.net</link>
+            <linktext>Napa Life</linktext>
+            <cameratype>PTZ Web Cam</cameratype>
+            <organization></organization>
+            <neighborhood>Napa, Monticello Road</neighborhood>
+            <zip>94558</zip>
+            <city>Napa</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>5</hexant>
+            <hexid>18778</hexid>
+            <lat>38.35236740</lat>
+            <lon>-122.23326111</lon>
+            <updated>2011-04-03 15:35:25</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>a8703b6c1e1daaf31c136e3d2f7681869881ba40</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/a/o/aogden/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/a/o/aogden/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/aogden/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>magentaville</handle>
+            <camid>magentavilleCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCABRENT4</assoc_station_id>
+            <link>http://weather.magentaville.com</link>
+            <linktext>Brentwood Hills</linktext>
+            <cameratype>OrangeMicro</cameratype>
+            <organization></organization>
+            <neighborhood>Brentwood Hills</neighborhood>
+            <zip>94513</zip>
+            <city>Brentwood</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>2</hexant>
+            <hexid>18778</hexid>
+            <lat>37.93693924</lat>
+            <lon>-121.74727631</lon>
+            <updated>2011-04-03 15:29:51</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>659afe11a40372f8535f3c86e30334d4047f9072</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/m/a/magentaville/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/m/a/magentaville/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/magentaville/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>SFSeaCliff</handle>
+            <camid>SFSeaCliffCAM2</camid>
+            <camindex>2</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCASANFR60</assoc_station_id>
+            <link></link>
+            <linktext>East</linktext>
+            <cameratype>airlink101</cameratype>
+            <organization></organization>
+            <neighborhood>SeaCliff</neighborhood>
+            <zip>94121</zip>
+            <city>San Francisco</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.78577423</lat>
+            <lon>-122.49172211</lon>
+            <updated>2011-04-03 15:37:06</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>1f4d1ee605a320edd8cb68c933a6eaa8249b531c</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/f/SFSeaCliff/2/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/f/SFSeaCliff/2/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/SFSeaCliff/2/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>botsmaker</handle>
+            <camid>botsmakerCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id></assoc_station_id>
+            <link>http://home.comcast.net/~botronics/hayward.html</link>
+            <linktext>Hayward CA Weathercam</linktext>
+            <cameratype>Vivitar 3350</cameratype>
+            <organization></organization>
+            <neighborhood>SF Bay Area</neighborhood>
+            <zip>94544</zip>
+            <city>Hayward</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>3</hexant>
+            <hexid>18778</hexid>
+            <lat>37.64954376</lat>
+            <lon>-122.12226105</lon>
+            <updated>2011-04-03 15:32:10</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>9e67442a5250b43dfe6aee4ad175f9032af42108</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/o/botsmaker/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/o/botsmaker/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/botsmaker/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>botsmaker</handle>
+            <camid>botsmakerCAM2</camid>
+            <camindex>2</camindex>
+            <type>ftp</type>
+            <assoc_station_id></assoc_station_id>
+            <link>http://home.comcast.net/~botronics/hayward.html</link>
+            <linktext>Hayward Weathercam South</linktext>
+            <cameratype>Vivitar 3350</cameratype>
+            <organization></organization>
+            <neighborhood>SF Bay Area</neighborhood>
+            <zip>94545</zip>
+            <city>Hayward</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>3</hexant>
+            <hexid>18778</hexid>
+            <lat>37.64925766</lat>
+            <lon>-122.12246704</lon>
+            <updated>2011-04-03 15:34:22</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>5b3ea99e32f5bdd7e53d63eb059285e556a0dd60</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/o/botsmaker/2/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/o/botsmaker/2/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/botsmaker/2/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>barenjager</handle>
+            <camid>barenjagerCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCADALYC1</assoc_station_id>
+            <link></link>
+            <linktext></linktext>
+            <cameratype>AXIS 207W wireless network cam</cameratype>
+            <organization></organization>
+            <neighborhood>Mussel Rock - Daly City - overlooking Pacifica</neighborhood>
+            <zip>94015</zip>
+            <city>Daly City</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.66719055</lat>
+            <lon>-122.48929596</lon>
+            <updated>2011-04-03 15:33:23</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>ca01daf53cc89f1c5efd3fefec7d6de6a00b9249</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/a/barenjager/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/a/barenjager/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/barenjager/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>AllenRbrts</handle>
+            <camid>AllenRbrtsCAM1</camid>
+            <camindex>1</camindex>
+            <type>url|1</type>
+            <assoc_station_id>KCAPLEAS6</assoc_station_id>
+            <imageurl>http://robertsroost.org/images/current_front_large.jpg</imageurl>
+            <link>www.robertsroost.org</link>
+            <linktext></linktext>
+            <cameratype></cameratype>
+            <organization></organization>
+            <neighborhood>Grey Eagle</neighborhood>
+            <zip>94566</zip>
+            <city>Pleasanton</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>3</hexant>
+            <hexid>18778</hexid>
+            <lat>37.65619659</lat>
+            <lon>-121.84037018</lon>
+            <updated>2011-04-03 15:36:51</updated>
+            <downloaded>2011-04-03 15:37:00</downloaded>
+            <hash>477cd30b87806fec55e5cf2281cf4e40a8269ede</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/a/l/AllenRbrts/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/a/l/AllenRbrts/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/AllenRbrts/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>pcj46</handle>
+            <camid>pcj46CAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCASAUSA3</assoc_station_id>
+            <link></link>
+            <linktext></linktext>
+            <cameratype>Apple iSight</cameratype>
+            <organization></organization>
+            <neighborhood></neighborhood>
+            <zip>94965</zip>
+            <city>Sausalito</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.85161209</lat>
+            <lon>-122.47996521</lon>
+            <updated>2011-04-03 15:26:19</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>8357e535a4900e35b86bb080caaf67c84bc374c5</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/p/c/pcj46/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/p/c/pcj46/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/pcj46/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>barenjager</handle>
+            <camid>barenjagerCAM2</camid>
+            <camindex>2</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCADALYC1</assoc_station_id>
+            <link></link>
+            <linktext></linktext>
+            <cameratype>AXIS 207W wireless network cam</cameratype>
+            <organization></organization>
+            <neighborhood>Mussel Rock Park - Daly City </neighborhood>
+            <zip>94015</zip>
+            <city>Daly City</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.67023468</lat>
+            <lon>-122.49172211</lon>
+            <updated>2011-04-03 15:36:37</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>09b0371b053e344db1a6901fb3e88d433d409e73</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/a/barenjager/2/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/a/barenjager/2/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/barenjager/2/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>NoeV</handle>
+            <camid>NoeVCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCASANFR98</assoc_station_id>
+            <link>http://home.ca.astound.net/~noeweather/</link>
+            <linktext>View looking East toward Bernal Hill</linktext>
+            <cameratype>Logitech Quickcam for Notebooks Pro</cameratype>
+            <organization></organization>
+            <neighborhood>Noe Valley (South)</neighborhood>
+            <zip>94131</zip>
+            <city>San Francisco</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.74566269</lat>
+            <lon>-122.43021393</lon>
+            <updated>2011-04-03 15:36:06</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>2677959dc5b899f86c6ac6985a09c2f9bcfc4d92</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/n/o/NoeV/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/n/o/NoeV/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/NoeV/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>shelt</handle>
+            <camid>sheltCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCATIBUR4</assoc_station_id>
+            <imageurl>http://axis-91b6af.axiscam.net:8005/img/video.mjpeg</imageurl>
+            <link>http://</link>
+            <linktext></linktext>
+            <cameratype>Linksys WVC54GCA</cameratype>
+            <organization></organization>
+            <neighborhood>Mt Tiburon</neighborhood>
+            <zip>94920</zip>
+            <city>Tiburon</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.88853455</lat>
+            <lon>-122.45846558</lon>
+            <updated>2011-04-03 15:30:58</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>b04a78e8990e5a6632c746bc74470ff0c52e2c00</hash>
+            <isrecent>1</isrecent>
+            <frequency>600</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/h/shelt/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/h/shelt/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/shelt/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>Inafog</handle>
+            <camid>InafogCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCASANFR79</assoc_station_id>
+            <link>http://</link>
+            <linktext>Looking West at Twin Peaks</linktext>
+            <cameratype>Panasonic HCM-735</cameratype>
+            <organization></organization>
+            <neighborhood>Looking SW at Bernal</neighborhood>
+            <zip>94110</zip>
+            <city>San Francisco</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.75410461</lat>
+            <lon>-122.41189575</lon>
+            <updated>2011-04-03 15:31:15</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>0ed1411f5a336c0661b16830e2df59c2420a066f</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/i/n/Inafog/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/i/n/Inafog/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/Inafog/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>hw35</handle>
+            <camid>hw35CAM1</camid>
+            <camindex>1</camindex>
+            <type>url|1</type>
+            <assoc_station_id></assoc_station_id>
+            <imageurl>http://wunder.irq3.com/image.jpg</imageurl>
+            <link>http://</link>
+            <linktext></linktext>
+            <cameratype></cameratype>
+            <organization>none</organization>
+            <neighborhood>Crestmoor</neighborhood>
+            <zip>94066</zip>
+            <city>San Bruno</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.61798477</lat>
+            <lon>-122.44072723</lon>
+            <updated>2011-04-03 15:32:27</updated>
+            <downloaded>2011-04-03 15:33:33</downloaded>
+            <hash>fc8e006dbdeeb196b5e4106ae68d45451bee2e6b</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/h/w/hw35/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/h/w/hw35/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/hw35/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>SYCWeather</handle>
+            <camid>SYCWeatherCAM1</camid>
+            <camindex>1</camindex>
+            <type>url|1</type>
+            <assoc_station_id>KCASAUSA8</assoc_station_id>
+            <imageurl>http://www.sausalitoyachtclub.org/webcam_images/syc.jpg</imageurl>
+            <link>http://www.sausalitoyachtclub.org</link>
+            <linktext>Sausalito Yacht Club</linktext>
+            <cameratype>Hawking HNC300</cameratype>
+            <organization>Sausalito Yacht Club</organization>
+            <neighborhood>Sausalito</neighborhood>
+            <zip>94965</zip>
+            <city>Sausalito</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.85659409</lat>
+            <lon>-122.47803497</lon>
+            <updated>2011-04-03 15:35:53</updated>
+            <downloaded>2011-04-03 15:35:17</downloaded>
+            <hash>a03423f3499ea79802c890a14b8404f95f86a6ca</hash>
+            <isrecent>1</isrecent>
+            <frequency>60</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/y/SYCWeather/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/y/SYCWeather/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/SYCWeather/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>thardie</handle>
+            <camid>thardieCAM2</camid>
+            <camindex>2</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCANEWAR1</assoc_station_id>
+            <link>http://www.orcas.net</link>
+            <linktext>Orcas Gallery</linktext>
+            <cameratype>Logitech Quickcam Pro 9000</cameratype>
+            <organization></organization>
+            <neighborhood>Union City</neighborhood>
+            <zip>94587</zip>
+            <city>Union City</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>3</hexant>
+            <hexid>18778</hexid>
+            <lat>37.59406281</lat>
+            <lon>-122.00226593</lon>
+            <updated>2011-04-03 15:36:18</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>11022c7f1cffd4e9e7116ecf0b7f3113299a669b</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/t/h/thardie/2/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/t/h/thardie/2/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/thardie/2/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>austindavid</handle>
+            <camid>austindavidCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id></assoc_station_id>
+            <imageurl>http://images:images@sunfish.homeunix.net/IMAGE.JPG</imageurl>
+            <link>http://austindavid.com</link>
+            <linktext>Austin David (.com)</linktext>
+            <cameratype>dlink dcs-920</cameratype>
+            <organization></organization>
+            <neighborhood></neighborhood>
+            <zip>94583</zip>
+            <city>San Ramon</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>3</hexant>
+            <hexid>18778</hexid>
+            <lat>37.72721863</lat>
+            <lon>-121.93602753</lon>
+            <updated>2011-04-03 15:31:54</updated>
+            <downloaded>2010-12-02 18:38:17</downloaded>
+            <hash>f45b948fa9162571a9a48bbac013c4f1f3fc2f4e</hash>
+            <isrecent>1</isrecent>
+            <frequency>60</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/a/u/austindavid/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/a/u/austindavid/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/austindavid/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>sdylewski</handle>
+            <camid>sdylewskiCAM1</camid>
+            <camindex>1</camindex>
+            <type>url|1</type>
+            <assoc_station_id>KCASANFR111</assoc_station_id>
+            <imageurl>http://scottdylewski.com/weather/current.jpg</imageurl>
+            <link>http://scott.dylewski.com</link>
+            <linktext></linktext>
+            <cameratype>Quckcam Pro 9000</cameratype>
+            <organization></organization>
+            <neighborhood>Glen Park</neighborhood>
+            <zip>94131</zip>
+            <city>San Francisco</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.73313522</lat>
+            <lon>-122.43758392</lon>
+            <updated>2011-04-03 15:28:57</updated>
+            <downloaded>2011-04-03 15:36:08</downloaded>
+            <hash>393f3fd2dde717fa9bcf914998dbcd494e4a7b2c</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/d/sdylewski/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/d/sdylewski/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/sdylewski/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>HamiltonHome</handle>
+            <camid>HamiltonHomeCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCASANRA17</assoc_station_id>
+            <imageurl>http://SunSentry.com/Weather/ParkCam.jpg</imageurl>
+            <link>http://SunSentry.com</link>
+            <linktext>Hamilton Station</linktext>
+            <cameratype>Sony SNC-RZ25N</cameratype>
+            <organization>Hamilton Station</organization>
+            <neighborhood>Old Ranch Estates</neighborhood>
+            <zip>94582</zip>
+            <city>San Ramon</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>3</hexant>
+            <hexid>18778</hexid>
+            <lat>37.74582672</lat>
+            <lon>-121.91800690</lon>
+            <updated>2011-04-03 15:37:15</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>d0baaa84083fcf0489605c55cc647f0307fc873e</hash>
+            <isrecent>1</isrecent>
+            <frequency>3600</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/h/a/HamiltonHome/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/h/a/HamiltonHome/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/HamiltonHome/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>CastroCam</handle>
+            <camid>CastroCamCAM1</camid>
+            <camindex>1</camindex>
+            <type>url|1</type>
+            <assoc_station_id>KCASANFR114</assoc_station_id>
+            <imageurl>http://castrocam.net/castrocam.jpg</imageurl>
+            <link>http://castrocam.net</link>
+            <linktext>The CastroCam</linktext>
+            <cameratype>Axis 2120</cameratype>
+            <organization>The CastroCam.net</organization>
+            <neighborhood>The Castro</neighborhood>
+            <zip>94114</zip>
+            <city>San Francisco</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.75971603</lat>
+            <lon>-122.43164062</lon>
+            <updated>2011-04-03 15:35:03</updated>
+            <downloaded>2011-04-03 15:36:24</downloaded>
+            <hash>b0f8c425deb0426b16bd85a712fb8cd9862f2836</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/c/a/CastroCam/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/c/a/CastroCam/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/CastroCam/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>kevinalameda</handle>
+            <camid>kevinalamedaCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCAALAME1</assoc_station_id>
+            <link>http://onshakyground.com</link>
+            <linktext>Alameda Onshakyground</linktext>
+            <cameratype></cameratype>
+            <organization></organization>
+            <neighborhood></neighborhood>
+            <zip>94501</zip>
+            <city>Alameda</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>4</hexant>
+            <hexid>18778</hexid>
+            <lat>37.76755524</lat>
+            <lon>-122.25511932</lon>
+            <updated>2011-04-03 01:11:56</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>928ef7425c0622d946e9bf7514e436043fe88f6c</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/k/e/kevinalameda/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/k/e/kevinalameda/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/kevinalameda/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>KCASARATOGA</handle>
+            <camid>KCASARATOGACAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCASARAT1</assoc_station_id>
+            <link>http://saratoga-weather.org/</link>
+            <linktext>Saratoga, CA Weather</linktext>
+            <cameratype>Panasonic BB-HCM735A</cameratype>
+            <organization>Saratoga-Weather.org</organization>
+            <neighborhood>Saratoga</neighborhood>
+            <zip>95070</zip>
+            <city>Saratoga</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>1</hexant>
+            <hexid>19137</hexid>
+            <lat>37.27472305</lat>
+            <lon>-122.02288055</lon>
+            <updated>2011-04-03 15:36:57</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>80b1728fce2b223917842511c72ed1246e62371c</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/k/c/KCASARATOGA/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/k/c/KCASARATOGA/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/KCASARATOGA/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>BearCreekMan</handle>
+            <camid>BearCreekManCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCABOULD3</assoc_station_id>
+            <link>http://www.boulder-creek.com</link>
+            <linktext>Boulder-Creek.com</linktext>
+            <cameratype>Panasonic</cameratype>
+            <organization>Boulder-Creek.com</organization>
+            <neighborhood>Cresta Vista</neighborhood>
+            <zip>95006</zip>
+            <city>Boulder Creek</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>1</hexant>
+            <hexid>19137</hexid>
+            <lat>37.13946152</lat>
+            <lon>-122.12618256</lon>
+            <updated>2011-04-03 15:36:06</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>f29001a887ab917347c0336bfd3d7828d16873bd</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/e/BearCreekMan/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/e/BearCreekMan/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/BearCreekMan/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>ssnell</handle>
+            <camid>ssnellCAM2</camid>
+            <camindex>2</camindex>
+            <type>ftp</type>
+            <assoc_station_id>KCASCOTT3</assoc_station_id>
+            <link>http://</link>
+            <linktext></linktext>
+            <cameratype>Panasonic BLC-10</cameratype>
+            <organization></organization>
+            <neighborhood>Scotts Valley Heights</neighborhood>
+            <zip>95066</zip>
+            <city>Scotts Valley</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>1</hexant>
+            <hexid>19137</hexid>
+            <lat>37.04216766</lat>
+            <lon>-122.02097321</lon>
+            <updated>2011-04-03 15:35:52</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>22046e75757ba70c6f68beefad36e9fdc13a1adc</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/s/ssnell/2/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/s/ssnell/2/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/ssnell/2/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>jshluker</handle>
+            <camid>jshlukerCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCALOSAL3</assoc_station_id>
+            <link>http://</link>
+            <linktext></linktext>
+            <cameratype>Logitech Pro 4000</cameratype>
+            <organization></organization>
+            <neighborhood>Near Village, Los Altos, CA</neighborhood>
+            <zip>94022</zip>
+            <city>Los Altos</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>1</hexant>
+            <hexid>19137</hexid>
+            <lat>37.37152863</lat>
+            <lon>-122.11380768</lon>
+            <updated>2011-04-03 15:35:35</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>0f8d983f83d509d0a54466ab7ff00258ddd97485</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/j/s/jshluker/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/j/s/jshluker/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/jshluker/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>sawdaw</handle>
+            <camid>sawdawCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp</type>
+            <assoc_station_id></assoc_station_id>
+            <link>http://</link>
+            <linktext></linktext>
+            <cameratype>Axis 210</cameratype>
+            <organization></organization>
+            <neighborhood>La Honda, CA</neighborhood>
+            <zip>94020</zip>
+            <city>La Honda</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>1</hexant>
+            <hexid>19137</hexid>
+            <lat>37.30915070</lat>
+            <lon>-122.19904327</lon>
+            <updated>2011-04-03 15:35:52</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>67924c442d7cfd92514b7997d9bce9866dd33de8</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/a/sawdaw/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/s/a/sawdaw/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/sawdaw/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>bkreid</handle>
+            <camid>bkreidCAM1</camid>
+            <camindex>1</camindex>
+            <type>ftp|0</type>
+            <assoc_station_id>KCAPALOA15</assoc_station_id>
+            <link>http://vegetablegroup.org/weather/</link>
+            <linktext></linktext>
+            <cameratype>Toshiba IK-WB15</cameratype>
+            <organization></organization>
+            <neighborhood>Looking south</neighborhood>
+            <zip>94301</zip>
+            <city>Palo Alto</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>1</hexant>
+            <hexid>19137</hexid>
+            <lat>37.43561554</lat>
+            <lon>-122.14177704</lon>
+            <updated>2011-04-03 15:30:43</updated>
+            <downloaded>0000-00-00 00:00:00</downloaded>
+            <hash>dd4e6b917de36d1478d13271e139da0395b7a424</hash>
+            <isrecent>1</isrecent>
+            <frequency>300</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/k/bkreid/1/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/b/k/bkreid/1/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/bkreid/1/show.html</CAMURL>
+        </cam>
+        <cam>
+            <handle>PPHCA</handle>
+            <camid>PPHCACAM2</camid>
+            <camindex>2</camindex>
+            <type>url|1</type>
+            <assoc_station_id>KCALAHON4</assoc_station_id>
+            <imageurl>http://home.deehayniephd.com/camera.jpg</imageurl>
+            <link></link>
+            <linktext></linktext>
+            <cameratype></cameratype>
+            <organization></organization>
+            <neighborhood>Portola Park Heights</neighborhood>
+            <zip>94020</zip>
+            <city>La Honda</city>
+            <state>CA</state>
+            <country>US</country>
+            <tzname>America/Los_Angeles</tzname>
+            <hexant>1</hexant>
+            <hexid>19137</hexid>
+            <lat>37.27038193</lat>
+            <lon>-122.18762207</lon>
+            <updated>2011-04-03 15:35:32</updated>
+            <downloaded>2011-04-03 15:34:59</downloaded>
+            <hash>10a9aad4564cac4183b158aceef3a6cacbd429e6</hash>
+            <isrecent>1</isrecent>
+            <frequency>60</frequency>
+            <CURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/p/p/PPHCA/2/current.jpg?t=1301859438</CURRENTIMAGEURL>
+            <WIDGETCURRENTIMAGEURL>http://icons.wunderground.com/webcamramdisk/p/p/PPHCA/2/widget.jpg?t=1301859438</WIDGETCURRENTIMAGEURL>
+            <CAMURL>http://www.wunderground.com/webcams/PPHCA/2/show.html</CAMURL>
+        </cam>
+    </webcams>
+    <nearby_weather_stations>
+        <airport>
+            <station>
+                <city>Oakland</city>
+                <state>CA</state>
+                <country>US</country>
+                <icao>KOAK</icao>
+                <lat>37.72000122</lat>
+                <lon>-122.22000122</lon>
+            </station>
+            <station>
+                <city>San Francisco</city>
+                <state>CA</state>
+                <country>US</country>
+                <icao>KSFO</icao>
+                <lat>37.61999893</lat>
+                <lon>-122.37000275</lon>
+            </station>
+            <station>
+                <city>Hayward</city>
+                <state>CA</state>
+                <country>US</country>
+                <icao>KHWD</icao>
+                <lat>37.65999985</lat>
+                <lon>-122.12000275</lon>
+            </station>
+            <station>
+                <city>Half Moon Bay</city>
+                <state>CA</state>
+                <country>US</country>
+                <icao>KHAF</icao>
+                <lat>37.50999832</lat>
+                <lon>-122.50000000</lon>
+            </station>
+        </airport>
+        <pws>
+            <station>
+                <neighborhood><![CDATA[Mission Bay - My weather is better than yours.]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR53]]></id>
+                <distance_km><![CDATA[0]]></distance_km>
+                <distance_mi><![CDATA[0]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Potrero Hill]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR108]]></id>
+                <distance_km><![CDATA[0]]></distance_km>
+                <distance_mi><![CDATA[0]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[China Basin Landing]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR14]]></id>
+                <distance_km><![CDATA[0]]></distance_km>
+                <distance_mi><![CDATA[0]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[SoMa]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR113]]></id>
+                <distance_km><![CDATA[1]]></distance_km>
+                <distance_mi><![CDATA[0]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[SOMA]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR105]]></id>
+                <distance_km><![CDATA[1]]></distance_km>
+                <distance_mi><![CDATA[0]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[SOMA - Near Van Ness]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR58]]></id>
+                <distance_km><![CDATA[2]]></distance_km>
+                <distance_mi><![CDATA[1]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[The Mission: Even the weather is hip]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR79]]></id>
+                <distance_km><![CDATA[2]]></distance_km>
+                <distance_mi><![CDATA[1]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[North Mission (Valencia & Market)]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR49]]></id>
+                <distance_km><![CDATA[2]]></distance_km>
+                <distance_mi><![CDATA[1]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Financial District]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR102]]></id>
+                <distance_km><![CDATA[2]]></distance_km>
+                <distance_mi><![CDATA[1]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[MesoWest San Fran Sewage Treatment Plant  CA US CARB]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[MCQ147]]></id>
+                <distance_km><![CDATA[3]]></distance_km>
+                <distance_mi><![CDATA[1]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Castro/San Francisco]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KPCASANF2]]></id>
+                <distance_km><![CDATA[3]]></distance_km>
+                <distance_mi><![CDATA[2]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[The Castro]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR114]]></id>
+                <distance_km><![CDATA[3]]></distance_km>
+                <distance_mi><![CDATA[2]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[HADS SAN FRANCISCO DOWNTOWN           CA US]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[MSFOC1]]></id>
+                <distance_km><![CDATA[3]]></distance_km>
+                <distance_mi><![CDATA[2]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Noe Valley]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR3]]></id>
+                <distance_km><![CDATA[3]]></distance_km>
+                <distance_mi><![CDATA[2]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Noe Valley (South)]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR98]]></id>
+                <distance_km><![CDATA[4]]></distance_km>
+                <distance_mi><![CDATA[2]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Billy Goat Hill]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR73]]></id>
+                <distance_km><![CDATA[4]]></distance_km>
+                <distance_mi><![CDATA[2]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Cole Valley]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR110]]></id>
+                <distance_km><![CDATA[4]]></distance_km>
+                <distance_mi><![CDATA[2]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[APRSWXNET San Francisco              CA US]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[MC9629]]></id>
+                <distance_km><![CDATA[5]]></distance_km>
+                <distance_mi><![CDATA[3]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Twin Peaks]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR34]]></id>
+                <distance_km><![CDATA[5]]></distance_km>
+                <distance_mi><![CDATA[3]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Sunnyside]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR70]]></id>
+                <distance_km><![CDATA[5]]></distance_km>
+                <distance_mi><![CDATA[3]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Marina District]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR82]]></id>
+                <distance_km><![CDATA[6]]></distance_km>
+                <distance_mi><![CDATA[3]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Forest Hill]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR72]]></id>
+                <distance_km><![CDATA[6]]></distance_km>
+                <distance_mi><![CDATA[3]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Golden Gate Heights]]></neighborhood>
+                <city><![CDATA[SAN FRANCISCO]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR63]]></id>
+                <distance_km><![CDATA[6]]></distance_km>
+                <distance_mi><![CDATA[4]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Forest Hill]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR109]]></id>
+                <distance_km><![CDATA[6]]></distance_km>
+                <distance_mi><![CDATA[4]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Outer Richmond]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR60]]></id>
+                <distance_km><![CDATA[8]]></distance_km>
+                <distance_mi><![CDATA[5]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Ingleside District]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR100]]></id>
+                <distance_km><![CDATA[9]]></distance_km>
+                <distance_mi><![CDATA[5]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[APRSWXNET San Francisco              CA US]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[MAS891]]></id>
+                <distance_km><![CDATA[10]]></distance_km>
+                <distance_mi><![CDATA[6]]></distance_mi>
+            </station>
+            <station>
+                <neighborhood><![CDATA[Ocean Beach - Kellys Cove]]></neighborhood>
+                <city><![CDATA[San Francisco]]></city>
+                <state><![CDATA[CA]]></state>
+                <country><![CDATA[US]]></country>
+                <id><![CDATA[KCASANFR99]]></id>
+                <distance_km><![CDATA[10]]></distance_km>
+                <distance_mi><![CDATA[6]]></distance_mi>
+            </station>
+        </pws>
+    </nearby_weather_stations>
+</location>
