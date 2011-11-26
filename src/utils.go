@@ -91,7 +91,7 @@ func Options() string {
 }
 
 
-func BuildURL(infoType string, stationId string) string { 
+func BuildURL(infoType string, stationId string) string {
 
 	const URLstem = "http://api.wunderground.com/api/bc5deaeccb858c43/"
 	const query		= "/q/"

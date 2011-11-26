@@ -32,7 +32,7 @@ forecast.o: utils.o
 alerts: alerts.o
 	$(L) -o alerts alerts.$(SFX)
 
-alerts.o:
+alerts.o: utils.o
 	$(C) alerts.go
 
 slookup: slookup.o

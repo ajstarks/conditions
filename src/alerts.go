@@ -28,100 +28,58 @@
 package main
 
 import (
+	"./utils"
 	"fmt"
 	"http"
-	"os"
-	"strings"
-	"xml"
-	"github.com/jteeuwen/go-pkg-optarg"
+	"json"
+	"io/ioutil"
 )
 
-const URLstem = "http://api.wunderground.com/api/bc5deaeccb858c43/alerts/q/"
-
-const VERS = "1.3.0"
-
-type Alert struct {
-	Description	string `xml:"alert>description"`
-	Message     string `xml:"alert>message"`
+type Conditions struct {
+	Alerts []Alerts
 }
 
-type Response struct {
-	Alerts	[]Alert
+type Alerts struct {
+	Date				string
+	Expires			string
+	Description	string
+	Message     string
 }
 
 func main() {
 
-	optarg.Add("s", "station", "Weather station.  May be indicated using city, state, CITY,STATE, country, (US or Canadian) zipcode, 3- or 4-letter airport code, or LAT,LONG", "KLNK")
-	optarg.Add("h", "help", "Print this message", false)
-	optarg.Add("V", "version", "Print version number", false)
-
-	var station = "KLNK"
-	var help, version bool
+	var stationId = utils.Options()
 	var URL string
 
-	for opt := range optarg.Parse() {
-		switch opt.ShortName {
-		case "s":
-			station = opt.String()
-		case "h":
-			help = opt.Bool()
-		case "V":
-			version = opt.Bool()
-		}
-	}
-
-	if help {
-		optarg.Usage()
-		os.Exit(0)
-	}
-
-	if version {
-		fmt.Println("conditions " + VERS)
-		fmt.Println("Copyright (C) 2011 by Stephen Ramsay")
-		fmt.Println("Data courtesy of Weather Underground, Inc.")
-		fmt.Println("is subject to Weather Underground Data Feed")
-		fmt.Println("Terms of Service.  The program itself is free")
-		fmt.Println("software, and you are welcome to redistribute")
-		fmt.Println("it under certain conditions.  See LICENSE for")
-		fmt.Println("details.")
-		os.Exit(0)
-	}
-
-	// Temporarily trim whitespace locations with spaces
-	// (e.g. "New York, NY" -> "NewYork,NY")
-	var station_components = strings.Fields(station)
-	var station_id = ""
-	for i := 0; i < len(station_components); i++ {
-		station_id = station_id + station_components[i]
-	}
-
-	URL = URLstem + station_id + ".xml"
+	URL = utils.BuildURL("alerts", stationId)
 
 	res, err := http.Get(URL)
+	var b []byte
+	var obs Conditions
 
 	if err == nil {
-		var response Response
-		xmlErr := xml.Unmarshal(res.Body, &response)
-		checkError(xmlErr)
-		printWeather(&response)
+		b, err = ioutil.ReadAll(res.Body)
 		res.Body.Close()
+		jsonErr := json.Unmarshal(b, &obs)
+		utils.CheckError(jsonErr)
+		printWeather(&obs, stationId)
 	}
 }
 
-func printWeather(response *Response) {
-	if len(response.Alerts) == 0 {
+func printWeather(obs *Conditions, stationId string) {
+
+	var alertsNum	= len(obs.Alerts)
+	var alerts		= obs.Alerts
+
+	if alertsNum == 0 {
 		fmt.Println("No active alerts")
 	} else {
-		for i := 0; i < len(response.Alerts); i++ {
-			fmt.Println(response.Alerts[i].Description)
-			fmt.Println(response.Alerts[i].Message)
+		for i := 0; i < alertsNum; i++ {
+			fmt.Println("### " +  alerts[i].Description + " ###")
+			fmt.Println()
+			fmt.Println("Issued at " + alerts[i].Date)
+			fmt.Println("Expires at " + alerts[i].Expires)
+			fmt.Println(alerts[i].Message)
 		}
-	}
-}
-
-func checkError(err os.Error) {
-	if err != nil {
-		fmt.Println(os.Stderr, "Fatal error ", err.String())
-		os.Exit(1)
 	}
 }
