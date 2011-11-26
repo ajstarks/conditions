@@ -37,7 +37,7 @@ import (
 	"github.com/jteeuwen/go-pkg-optarg"
 )
 
-const URLstem = "http://api.wunderground.com/api/bc5deaeccb858c43/q/"
+const URLstem = "http://api.wunderground.com/api/bc5deaeccb858c43/forecast/q/"
 
 const VERS = "1.3.0"
 
@@ -47,9 +47,18 @@ type Forecastday struct {
 }
 
 type Txt_forecast struct {
-	Date         string `xml:"txt_forecast>date"`
+	Date         string `xml:"forecast>txt_forecast>date"`
 	Forecastdays []Forecastday
 }
+
+type Forecast struct {
+	Txt_forecast Txt_forecast
+}
+
+type Response struct {
+	Forecast Forecast
+}
+
 
 func main() {
 
@@ -99,23 +108,26 @@ func main() {
 
 	URL = URLstem + station_id + ".xml"
 
+	fmt.Println(URL)
+
 	res, err := http.Get(URL)
 
 	if err == nil {
-		var forecast Txt_forecast
-		xmlErr := xml.Unmarshal(res.Body, &forecast)
+		var response Response
+		xmlErr := xml.Unmarshal(res.Body, &response)
 		checkError(xmlErr)
-		printWeather(&forecast, station)
+		printWeather(&response, station)
 		res.Body.Close()
 	}
 }
 
-func printWeather(forecast *Txt_forecast, station string) {
+func printWeather(response *Response, station string) {
 	fmt.Println("Forecast for " + station)
-	fmt.Println("Issued at " + forecast.Date)
-	for i := 0; i < len(forecast.Forecastdays); i++ {
-		fmt.Println("here")
-		fmt.Println(forecast.Forecastdays[i].Title + ": " + forecast.Forecastdays[i].Fcttext)
+	fmt.Println("Issued at " + response.Forecast.Txt_forecast.Date)
+	fmt.Println(response)
+	fmt.Println(len(response.Forecast.Txt_forecast.Forecastdays))
+	for i := 0; i < len(response.Forecast.Txt_forecast.Forecastdays); i++ {
+		fmt.Println(response.Forecast.Txt_forecast.Forecastdays[i].Title + ": " + response.Forecast.Txt_forecast.Forecastdays[i].Fcttext)
 	}
 }
 

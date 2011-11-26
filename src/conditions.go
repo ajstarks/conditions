@@ -33,7 +33,8 @@ import (
 	"http"
 	"os"
 	"strings"
-	"xml"
+	"json"
+	"io/ioutil"
 	"github.com/jteeuwen/go-pkg-optarg"
 )
 
@@ -41,22 +42,30 @@ const URLstem = "http://api.wunderground.com/api/bc5deaeccb858c43/conditions/q/"
 
 const VERS = "1.3.0"
 
-type Weather struct {
-	Observation_time    string `xml:"current_observation>observation_time"`
-	Full                string `xml:"current_observation>display_location>full"`
-	Station_id          string `xml:"current_observation>station_id"`
-	Weather             string `xml:"current_observation>weather"`
-	Temperature_string  string `xml:"current_observation>temperature_string"`
-	Relative_humidity   string `xml:"current_observation>relative_humidity"`
-	Wind_string         string `xml:"current_observation>wind_string"`
-	Pressure_mb         string `xml:"current_observation>pressure_mb"`
-	Pressure_in         string `xml:"current_observation>pressure_in"`
-	Pressure_trend      string `xml:"current_observation>pressure_trend"`
-	Dewpoint_string     string `xml:"current_observation>dewpoint_string"`
-	Heat_index_string   string `xml:"current_observation>heat_index_string"`
-	Windchill_string    string `xml:"current_observation>windchill_string"`
-	Visibility_mi       string `xml:"current_observation>visibility_mi"`
-	Precip_today_string string `xml:"current_observation>precip_today_string"`
+type Observation struct {
+	Current_observation Current
+}
+
+type Current struct {
+	Observation_time     string
+	Observation_location Location
+	Station_id           string
+	Weather              string
+	Temperature_string   string
+	Relative_humidity    string
+	Wind_string          string
+	Pressure_mb          string
+	Pressure_in          string
+	Pressure_trend       string
+	Dewpoint_string      string
+	Heat_index_string    string
+	Windchill_string     string
+	Visibility_mi        string
+	Precip_today_string  string
+}
+
+type Location struct {
+	Full	string
 }
 
 func main() {
@@ -105,43 +114,46 @@ func main() {
 		station_id = station_id + station_components[i]
 	}
 
-	URL = URLstem + station_id + ".xml"
+	URL = URLstem + station_id + ".json"
 
 	res, err := http.Get(URL)
+	var b []byte;
+	var obs Observation
 
 	if err == nil {
-		var weather Weather
-		xmlErr := xml.Unmarshal(res.Body, &weather)
+		b, err = ioutil.ReadAll(res.Body);
+		res.Body.Close();
+		jsonErr := json.Unmarshal(b, &obs)
 		res.Body.Close()
-		checkError(xmlErr)
-		printWeather(&weather)
+		checkError(jsonErr)
+		printWeather(&obs)
 	}
 }
 
-func printWeather(weather *Weather) {
-	fmt.Println("Current conditions at " + weather.Full + " (" + weather.Station_id + ")")
-	fmt.Println(weather.Observation_time)
-	fmt.Println("   Temperature: " + weather.Temperature_string)
-	fmt.Println("   Sky Conditions: " + weather.Weather)
-	fmt.Println("   Wind: " + weather.Wind_string)
-	fmt.Println("   Relative humidity: " + weather.Relative_humidity)
-	switch weather.Pressure_trend {
+func printWeather(obs *Observation) {
+	fmt.Println("Current conditions at " + obs.Current_observation.Observation_location.Full + " (" + obs.Current_observation.Station_id + ")")
+	fmt.Println(obs.Current_observation.Observation_time)
+	fmt.Println("   Temperature: " + obs.Current_observation.Temperature_string)
+	fmt.Println("   Sky Conditions: " + obs.Current_observation.Weather)
+	fmt.Println("   Wind: " + obs.Current_observation.Wind_string)
+	fmt.Println("   Relative humidity: " + obs.Current_observation.Relative_humidity)
+	switch obs.Current_observation.Pressure_trend {
 	case "+":
-		fmt.Println("   Pressure: " + weather.Pressure_in + " in (" + weather.Pressure_mb + " mb) and rising")
+		fmt.Println("   Pressure: " + obs.Current_observation.Pressure_in + " in (" + obs.Current_observation.Pressure_mb + " mb) and rising")
 	case "-":
-		fmt.Println("   Pressure: " + weather.Pressure_in + " in (" + weather.Pressure_mb + " mb) and falling")
+		fmt.Println("   Pressure: " + obs.Current_observation.Pressure_in + " in (" + obs.Current_observation.Pressure_mb + " mb) and falling")
 	case "0":
-		fmt.Println("   Pressure: " + weather.Pressure_in + " in (" + weather.Pressure_mb + " mb) and holding steady")
+		fmt.Println("   Pressure: " + obs.Current_observation.Pressure_in + " in (" + obs.Current_observation.Pressure_mb + " mb) and holding steady")
 	}
-	fmt.Println("   Dewpoint: " + weather.Dewpoint_string)
-	if weather.Heat_index_string != "NA" {
-		fmt.Println("   Heat Index: " + weather.Heat_index_string)
+	fmt.Println("   Dewpoint: " + obs.Current_observation.Dewpoint_string)
+	if obs.Current_observation.Heat_index_string != "NA" {
+		fmt.Println("   Heat Index: " + obs.Current_observation.Heat_index_string)
 	}
-	if weather.Windchill_string != "NA" {
-		fmt.Println("   Windchill: " + weather.Windchill_string)
+	if obs.Current_observation.Windchill_string != "NA" {
+		fmt.Println("   Windchill: " + obs.Current_observation.Windchill_string)
 	}
-	fmt.Println("   Visibility: " + weather.Visibility_mi + " miles")
-	fmt.Println("   Precipitation today: " + weather.Precip_today_string)
+	fmt.Println("   Visibility: " + obs.Current_observation.Visibility_mi + " miles")
+	fmt.Println("   Precipitation today: " + obs.Current_observation.Precip_today_string)
 }
 
 func checkError(err os.Error) {
