@@ -45,7 +45,7 @@ type Alert struct {
 	Message     string `xml:"alert>message"`
 }
 
-type Result struct {
+type Response struct {
 	Alerts	[]Alert
 }
 
@@ -100,21 +100,21 @@ func main() {
 	res, err := http.Get(URL)
 
 	if err == nil {
-		var result Result
-		xmlErr := xml.Unmarshal(res.Body, &result)
+		var response Response
+		xmlErr := xml.Unmarshal(res.Body, &response)
 		checkError(xmlErr)
-		printWeather(&result)
+		printWeather(&response)
 		res.Body.Close()
 	}
 }
 
-func printWeather(result *Result) {
-	if len(result.Alerts) == 0 {
+func printWeather(response *Response) {
+	if len(response.Alerts) == 0 {
 		fmt.Println("No active alerts")
 	} else {
-		for i := 0; i < len(result.Alerts); i++ {
-			fmt.Println(result.Alerts[i].Description)
-			fmt.Println(result.Alerts[i].Message)
+		for i := 0; i < len(response.Alerts); i++ {
+			fmt.Println(response.Alerts[i].Description)
+			fmt.Println(response.Alerts[i].Message)
 		}
 	}
 }
