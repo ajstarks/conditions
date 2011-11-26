@@ -7,7 +7,7 @@
 
 	Written and maintained by Stephen Ramsay
 
-	Last Modified: Fri Jul 15 23:56:53 CDT 2011
+	Last Modified: Fri Nov 25 22:03:31 CST 2011
 
 	Copyright © 2011 by Stephen Ramsay
 
@@ -37,27 +37,27 @@ import (
 	"github.com/jteeuwen/go-pkg-optarg"
 )
 
-const URLstem = "http://api.wunderground.com/auto/wui/geo/ForecastXML/index.xml?query="
+const URLstem = "http://api.wunderground.com/api/bc5deaeccb858c43/q/"
 
-const VERS = "1.2.1"
+const VERS = "1.3.0"
 
-type Day struct {
-	Title   string
-	Fcttext string
+type Forecastday struct {
+	Title   string `xml:"forecastday>title"`
+	Fcttext string `xml:"forecastday>fcttext"`
 }
 
-type Forecast struct {
-	Date        string `xml:"txt_forecast>date"`
-	Forecastday []Day  `xml:"txt_forecast>forecastday"`
+type Txt_forecast struct {
+	Date         string `xml:"txt_forecast>date"`
+	Forecastdays []Forecastday
 }
 
 func main() {
 
-	optarg.Add("s", "station", "Weather station.  May be indicated using city, state, CITY,STATE, country, (US or Canadian) zipcode, 3- or 4-letter airport code, or LAT,LONG", "Lincoln, NE")
+	optarg.Add("s", "station", "Weather station.  May be indicated using city, state, CITY,STATE, country, (US or Canadian) zipcode, 3- or 4-letter airport code, or LAT,LONG", "KLNK")
 	optarg.Add("h", "help", "Print this message", false)
 	optarg.Add("V", "version", "Print version number", false)
 
-	var station = "Lincoln, NE"
+	var station = "KLNK"
 	var help, version bool
 	var URL string
 
@@ -97,12 +97,12 @@ func main() {
 		station_id = station_id + station_components[i]
 	}
 
-	URL = URLstem + station_id
+	URL = URLstem + station_id + ".xml"
 
 	res, err := http.Get(URL)
 
 	if err == nil {
-		var forecast Forecast
+		var forecast Txt_forecast
 		xmlErr := xml.Unmarshal(res.Body, &forecast)
 		checkError(xmlErr)
 		printWeather(&forecast, station)
@@ -110,11 +110,12 @@ func main() {
 	}
 }
 
-func printWeather(forecast *Forecast, station string) {
+func printWeather(forecast *Txt_forecast, station string) {
 	fmt.Println("Forecast for " + station)
 	fmt.Println("Issued at " + forecast.Date)
-	for i := 0; i < len(forecast.Forecastday); i++ {
-		fmt.Println(forecast.Forecastday[i].Title + ": " + forecast.Forecastday[i].Fcttext)
+	for i := 0; i < len(forecast.Forecastdays); i++ {
+		fmt.Println("here")
+		fmt.Println(forecast.Forecastdays[i].Title + ": " + forecast.Forecastdays[i].Fcttext)
 	}
 }
 
