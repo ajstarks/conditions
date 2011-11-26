@@ -26,23 +26,19 @@
 	<http://www.gnu.org/licenses/>
 
 */
+
+
 package main
 
 import (
+	"./utils"
 	"fmt"
 	"http"
-	"os"
-	"strings"
 	"json"
 	"io/ioutil"
-	"github.com/jteeuwen/go-pkg-optarg"
 )
 
-const URLstem = "http://api.wunderground.com/api/bc5deaeccb858c43/conditions/q/"
-
-const VERS = "1.3.0"
-
-type Observation struct {
+type Conditions struct {
 	Current_observation Current
 }
 
@@ -70,67 +66,26 @@ type Location struct {
 
 func main() {
 
-	optarg.Add("s", "station", "Weather station.  May be indicated using city, state, CITY,STATE, country, (US or Canadian) zipcode, 3- or 4-letter airport code, or LAT,LONG", "KLNK")
-	optarg.Add("h", "help", "Print this message", false)
-	optarg.Add("V", "version", "Print version number", false)
-
-	var station = "KLNK"
-	var help, version bool
+	var stationId = utils.Options()
 	var URL string
 
-	for opt := range optarg.Parse() {
-		switch opt.ShortName {
-		case "s":
-			station = opt.String()
-		case "h":
-			help = opt.Bool()
-		case "V":
-			version = opt.Bool()
-		}
-	}
-
-	if help {
-		optarg.Usage()
-		os.Exit(0)
-	}
-
-	if version {
-		fmt.Println("conditions " + VERS)
-		fmt.Println("Copyright (C) 2011 by Stephen Ramsay")
-		fmt.Println("Data courtesy of Weather Underground, Inc.")
-		fmt.Println("is subject to Weather Underground Data Feed")
-		fmt.Println("Terms of Service.  The program itself is free")
-		fmt.Println("software, and you are welcome to redistribute")
-		fmt.Println("it under certain conditions.  See LICENSE for")
-		fmt.Println("details.")
-		os.Exit(0)
-	}
-
-	// Temporarily trim whitespace locations with spaces
-	// (e.g. "New York, NY" -> "NewYork,NY")
-	var station_components = strings.Fields(station)
-	var station_id = ""
-	for i := 0; i < len(station_components); i++ {
-		station_id = station_id + station_components[i]
-	}
-
-	URL = URLstem + station_id + ".json"
+	URL = utils.BuildURL("conditions", stationId)
 
 	res, err := http.Get(URL)
 	var b []byte;
-	var obs Observation
+	var obs Conditions
 
 	if err == nil {
 		b, err = ioutil.ReadAll(res.Body);
 		res.Body.Close();
 		jsonErr := json.Unmarshal(b, &obs)
 		res.Body.Close()
-		checkError(jsonErr)
+		utils.CheckError(jsonErr)
 		printWeather(&obs)
 	}
 }
 
-func printWeather(obs *Observation) {
+func printWeather(obs *Conditions) {
 	fmt.Println("Current conditions at " + obs.Current_observation.Observation_location.Full + " (" + obs.Current_observation.Station_id + ")")
 	fmt.Println(obs.Current_observation.Observation_time)
 	fmt.Println("   Temperature: " + obs.Current_observation.Temperature_string)
@@ -154,11 +109,4 @@ func printWeather(obs *Observation) {
 	}
 	fmt.Println("   Visibility: " + obs.Current_observation.Visibility_mi + " miles")
 	fmt.Println("   Precipitation today: " + obs.Current_observation.Precip_today_string)
-}
-
-func checkError(err os.Error) {
-	if err != nil {
-		fmt.Println(os.Stderr, "Fatal error ", err.String())
-		os.Exit(1)
-	}
 }

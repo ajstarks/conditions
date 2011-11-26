@@ -20,7 +20,7 @@ all: $(PROGS)
 conditions: conditions.o
 	$(L) -o conditions conditions.$(SFX)
 
-conditions.o:
+conditions.o: utils.o
 	$(C) conditions.go
 
 forecast: forecast.o
@@ -40,6 +40,9 @@ slookup: slookup.o
 
 slookup.o:
 	$(C) slookup.go
+
+utils.o:
+	$(C) utils.go 
 
 clean:
 	rm -f $(PROGS)
