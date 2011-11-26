@@ -26,7 +26,7 @@ conditions.o: utils.o
 forecast: forecast.o
 	$(L) -o forecast forecast.$(SFX)
 
-forecast.o:
+forecast.o: utils.o
 	$(C) forecast.go
 
 alerts: alerts.o

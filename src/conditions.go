@@ -27,7 +27,6 @@
 
 */
 
-
 package main
 
 import (
@@ -76,37 +75,39 @@ func main() {
 	var obs Conditions
 
 	if err == nil {
-		b, err = ioutil.ReadAll(res.Body);
-		res.Body.Close();
-		jsonErr := json.Unmarshal(b, &obs)
+		b, err = ioutil.ReadAll(res.Body)
 		res.Body.Close()
+		jsonErr := json.Unmarshal(b, &obs)
 		utils.CheckError(jsonErr)
 		printWeather(&obs)
 	}
 }
 
 func printWeather(obs *Conditions) {
-	fmt.Println("Current conditions at " + obs.Current_observation.Observation_location.Full + " (" + obs.Current_observation.Station_id + ")")
-	fmt.Println(obs.Current_observation.Observation_time)
-	fmt.Println("   Temperature: " + obs.Current_observation.Temperature_string)
-	fmt.Println("   Sky Conditions: " + obs.Current_observation.Weather)
-	fmt.Println("   Wind: " + obs.Current_observation.Wind_string)
-	fmt.Println("   Relative humidity: " + obs.Current_observation.Relative_humidity)
-	switch obs.Current_observation.Pressure_trend {
+
+	var observations = obs.Current_observation
+
+	fmt.Println("Current conditions at " + observations.Observation_location.Full + " (" + observations.Station_id + ")")
+	fmt.Println(observations.Observation_time)
+	fmt.Println("   Temperature: " + observations.Temperature_string)
+	fmt.Println("   Sky Conditions: " + observations.Weather)
+	fmt.Println("   Wind: " + observations.Wind_string)
+	fmt.Println("   Relative humidity: " + observations.Relative_humidity)
+	switch observations.Pressure_trend {
 	case "+":
-		fmt.Println("   Pressure: " + obs.Current_observation.Pressure_in + " in (" + obs.Current_observation.Pressure_mb + " mb) and rising")
+		fmt.Println("   Pressure: " + observations.Pressure_in + " in (" + observations.Pressure_mb + " mb) and rising")
 	case "-":
-		fmt.Println("   Pressure: " + obs.Current_observation.Pressure_in + " in (" + obs.Current_observation.Pressure_mb + " mb) and falling")
+		fmt.Println("   Pressure: " + observations.Pressure_in + " in (" + observations.Pressure_mb + " mb) and falling")
 	case "0":
-		fmt.Println("   Pressure: " + obs.Current_observation.Pressure_in + " in (" + obs.Current_observation.Pressure_mb + " mb) and holding steady")
+		fmt.Println("   Pressure: " + observations.Pressure_in + " in (" + observations.Pressure_mb + " mb) and holding steady")
 	}
-	fmt.Println("   Dewpoint: " + obs.Current_observation.Dewpoint_string)
-	if obs.Current_observation.Heat_index_string != "NA" {
-		fmt.Println("   Heat Index: " + obs.Current_observation.Heat_index_string)
+	fmt.Println("   Dewpoint: " + observations.Dewpoint_string)
+	if observations.Heat_index_string != "NA" {
+		fmt.Println("   Heat Index: " + observations.Heat_index_string)
 	}
-	if obs.Current_observation.Windchill_string != "NA" {
-		fmt.Println("   Windchill: " + obs.Current_observation.Windchill_string)
+	if observations.Windchill_string != "NA" {
+		fmt.Println("   Windchill: " + observations.Windchill_string)
 	}
-	fmt.Println("   Visibility: " + obs.Current_observation.Visibility_mi + " miles")
-	fmt.Println("   Precipitation today: " + obs.Current_observation.Precip_today_string)
+	fmt.Println("   Visibility: " + observations.Visibility_mi + " miles")
+	fmt.Println("   Precipitation today: " + observations.Precip_today_string)
 }
