@@ -35,6 +35,7 @@ import (
   "http"
   "json"
   "io/ioutil"
+  "regexp"
 )
 
 type Conditions struct {
@@ -85,29 +86,32 @@ func main() {
 
 func printWeather(obs *Conditions) {
 
-  var observations = obs.Current_observation
+  var current = obs.Current_observation
 
-  fmt.Println("Current conditions at " + observations.Observation_location.Full + " (" + observations.Station_id + ")")
-  fmt.Println(observations.Observation_time)
-  fmt.Println("   Temperature: " + observations.Temperature_string)
-  fmt.Println("   Sky Conditions: " + observations.Weather)
-  fmt.Println("   Wind: " + observations.Wind_string)
-  fmt.Println("   Relative humidity: " + observations.Relative_humidity)
-  switch observations.Pressure_trend {
+  fmt.Println("Current conditions at " + current.Observation_location.Full + " (" + current.Station_id + ")")
+  fmt.Println(current.Observation_time)
+  fmt.Println("   Temperature: " + current.Temperature_string)
+  fmt.Println("   Sky Conditions: " + current.Weather)
+  fmt.Println("   Wind: " + current.Wind_string)
+  fmt.Println("   Relative humidity: " + current.Relative_humidity)
+  switch current.Pressure_trend {
   case "+":
-      fmt.Println("   Pressure: " + observations.Pressure_in + " in (" + observations.Pressure_mb + " mb) and rising")
+      fmt.Println("   Pressure: " + current.Pressure_in + " in (" + current.Pressure_mb + " mb) and rising")
   case "-":
-    fmt.Println("   Pressure: " + observations.Pressure_in + " in (" + observations.Pressure_mb + " mb) and falling")
+    fmt.Println("   Pressure: " + current.Pressure_in + " in (" + current.Pressure_mb + " mb) and falling")
   case "0":
-    fmt.Println("   Pressure: " + observations.Pressure_in + " in (" + observations.Pressure_mb + " mb) and holding steady")
+    fmt.Println("   Pressure: " + current.Pressure_in + " in (" + current.Pressure_mb + " mb) and holding steady")
   }
-  fmt.Println("   Dewpoint: " + observations.Dewpoint_string)
-  if observations.Heat_index_string != "NA" {
-    fmt.Println("   Heat Index: " + observations.Heat_index_string)
+  fmt.Println("   Dewpoint: " + current.Dewpoint_string)
+  if current.Heat_index_string != "NA" {
+    fmt.Println("   Heat Index: " + current.Heat_index_string)
   }
-  if observations.Windchill_string != "NA" {
-    fmt.Println("   Windchill: " + observations.Windchill_string)
+  if current.Windchill_string != "NA" {
+    fmt.Println("   Windchill: " + current.Windchill_string)
   }
-  fmt.Println("   Visibility: " + observations.Visibility_mi + " miles")
-  fmt.Println("   Precipitation today: " + observations.Precip_today_string)
+  fmt.Println("   Visibility: " + current.Visibility_mi + " miles")
+  m,_ := regexp.MatchString("0.0", current.Precip_today_string)
+  if !m {
+    fmt.Println("   Precipitation today: " + current.Precip_today_string)
+  }
 }

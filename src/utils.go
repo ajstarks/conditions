@@ -82,7 +82,7 @@ func Options() string {
   // Trap for city-state combinations (e.g. "San Francisco, CA") and
   // make them URL-friendly (e.g. "CA/SanFranciso")
 
-  cityStatePattern := regexp.MustCompile("([A-Za-z ]+), ([A-Z][A-Z])")
+  cityStatePattern := regexp.MustCompile("([A-Za-z ]+), ([A-Za-z ]+)")
   cityState := cityStatePattern.FindStringSubmatch(station)
 
   if cityState != nil {

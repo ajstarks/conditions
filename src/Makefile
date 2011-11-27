@@ -72,3 +72,4 @@ install:
 	cp alerts /usr/local/bin/
 	cp slookup /usr/local/bin/
 	cp astronomy /usr/local/bin/
+	cp almanac /usr/local/bin/
