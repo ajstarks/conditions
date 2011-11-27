@@ -1,3 +1,0 @@
-
-. Filter out precip totals when 0.0
-. Add man page
