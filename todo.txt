@@ -1,0 +1,8 @@
+
+1. Implement .condrc file for default station
+2. Implement hourly as option to conditions
+3. Implement hourly7day as option to conditions
+4. Implement forecast7day as option to forecast
+5. Implement yesterday as option to conditions
+6. Implement planner
+7. Man pages
