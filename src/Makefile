@@ -1,5 +1,5 @@
 
-PROGS = opt-arg conditions forecast alerts slookup astronomy
+PROGS = opt-arg conditions forecast alerts slookup astronomy almanac
 GOARCH := $(GOARCH)
 GOPATH := $(PWD)
 
@@ -49,6 +49,12 @@ astronomy: astronomy.o
 
 astronomy.o: utils.o
 	$(C) astronomy.go
+
+almanac: almanac.o
+	$(L) -L $(GOPATH)/pkg/linux_amd64 -o almanac almanac.$(SFX)
+
+almanac.o: utils.o
+	$(C) almanac.go
 
 utils.o:
 	$(C) -I $(GOPATH)/pkg/linux_amd64 utils.go 
