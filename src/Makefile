@@ -1,7 +1,7 @@
 
-PROGS = conditions forecast alerts slookup
-
+PROGS = opt-arg conditions forecast alerts slookup
 GOARCH := $(GOARCH)
+GOPATH := $(PWD)
 
 ifeq ($(GOARCH), amd64)
 	C   = 6g
@@ -17,37 +17,42 @@ endif
 
 all: $(PROGS)
 
+opt-arg:
+	GOPATH=$(PWD) goinstall github.com/jteeuwen/go-pkg-optarg
+
 conditions: conditions.o
-	$(L) -o conditions conditions.$(SFX)
+	$(L) -L $(GOPATH)/pkg/linux_amd64 -o conditions conditions.$(SFX)
 
 conditions.o: utils.o
 	$(C) conditions.go
 
 forecast: forecast.o
-	$(L) -o forecast forecast.$(SFX)
+	$(L) -L $(GOPATH)/pkg/linux_amd64 -o forecast forecast.$(SFX)
 
 forecast.o: utils.o
 	$(C) forecast.go
 
 alerts: alerts.o
-	$(L) -o alerts alerts.$(SFX)
+	$(L) -L $(GOPATH)/pkg/linux_amd64 -o alerts alerts.$(SFX)
 
 alerts.o: utils.o
 	$(C) alerts.go
 
 slookup: slookup.o
-	$(L) -o slookup slookup.$(SFX)
+	$(L) -L $(GOPATH)/pkg/linux_amd64 -o slookup slookup.$(SFX)
 
 slookup.o: utils.o
 	$(C) slookup.go
 
 utils.o:
-	$(C) utils.go 
+	$(C) -I $(GOPATH)/pkg/linux_amd64 utils.go 
 
 clean:
 	rm -f $(PROGS)
 	rm -f *.8
 	rm -f *.6
+	rm -rf pkg
+	cd src/github.com/jteeuwen/go-pkg-optarg/; make clean 
 
 install:
 	cp conditions /usr/local/bin/
