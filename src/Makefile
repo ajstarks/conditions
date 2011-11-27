@@ -1,5 +1,5 @@
 
-PROGS = opt-arg conditions forecast alerts slookup
+PROGS = opt-arg conditions forecast alerts slookup astronomy
 GOARCH := $(GOARCH)
 GOPATH := $(PWD)
 
@@ -44,6 +44,12 @@ slookup: slookup.o
 slookup.o: utils.o
 	$(C) slookup.go
 
+astronomy: astronomy.o
+	$(L) -L $(GOPATH)/pkg/linux_amd64 -o astronomy astronomy.$(SFX)
+
+astronomy.o: utils.o
+	$(C) astronomy.go
+
 utils.o:
 	$(C) -I $(GOPATH)/pkg/linux_amd64 utils.go 
 
@@ -59,3 +65,4 @@ install:
 	cp forecast /usr/local/bin/
 	cp alerts /usr/local/bin/
 	cp slookup /usr/local/bin/
+	cp astronomy /usr/local/bin/
