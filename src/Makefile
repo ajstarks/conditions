@@ -59,4 +59,3 @@ install:
 	cp forecast /usr/local/bin/
 	cp alerts /usr/local/bin/
 	cp slookup /usr/local/bin/
-

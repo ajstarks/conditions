@@ -4,7 +4,7 @@
 
 	Written and maintained by Stephen Ramsay
 
-	Last Modified: Fri Nov 25 16:37:06 CST 2011
+	Last Modified: Sun Nov 27 12:49:54 CST 2011
 
 	Copyright © 2011 by Stephen Ramsay
 
@@ -29,6 +29,7 @@ package utils
 import (
 	"fmt"
 	"os"
+	"regexp"
 	"strings"
 	"github.com/jteeuwen/go-pkg-optarg"
 )
@@ -78,12 +79,15 @@ func Options() string {
 		os.Exit(0)
 	}
 
-	// This is wrong.  It should use a regex to trap for
-	// "San Francisco, CA" and turn it into "CA/SanFranciso"
-	var stationComponents = strings.Fields(station)
-	var stationId = ""
-	for i := 0; i < len(stationComponents); i++ {
-		station = stationId + stationComponents[i]
+	// Trap for city-state combinations (e.g. "San Francisco, CA") and
+	// turn it into "CA/SanFranciso"
+
+	cityStatePattern := regexp.MustCompile("([A-Za-z ]+), ([A-Z][A-Z])")
+	cityState := cityStatePattern.FindStringSubmatch(station)
+
+	if cityState != nil {
+		station = cityState[2] + "/" + cityState[1]
+		station = strings.Replace(station, " ", "_", -1)
 	}
 
 	return station
