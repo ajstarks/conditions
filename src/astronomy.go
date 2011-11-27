@@ -82,7 +82,7 @@ func main() {
 
 func printWeather(obs *Conditions, stationId string) {
 
-  var age,_ = strconv.Atof32(obs.Moon_phase.AgeOfMoon)
+  var age,_ = strconv.Atoi(obs.Moon_phase.AgeOfMoon)
   var percent = obs.Moon_phase.PercentIlluminated
 
   // Calculate traditional description of lunar phase
@@ -90,14 +90,14 @@ func printWeather(obs *Conditions, stationId string) {
   var moonDesc string
 
   switch {
-  case age < 1.84566:  moonDesc = "New moon"
-  case age < 5.53699:  moonDesc = "Waxing crescent"
-  case age < 9.22831:  moonDesc = "First quarter"
-  case age < 12.91963: moonDesc = "Waxing gibbous"
-  case age < 16.61096: moonDesc = "Full moon"
-  case age < 20.30228: moonDesc = "Waning gibbous"
-  case age < 23.99361: moonDesc = "Last quarter"
-  case age < 27.68493: moonDesc = "Waning crescent"
+  case age < 2:  moonDesc = "New moon"
+  case age < 6:  moonDesc = "Waxing crescent"
+  case age < 9:  moonDesc = "First quarter"
+  case age < 13: moonDesc = "Waxing gibbous"
+  case age < 17: moonDesc = "Full moon"
+  case age < 20: moonDesc = "Waning gibbous"
+  case age < 24: moonDesc = "Last quarter"
+  case age < 28: moonDesc = "Waning crescent"
   }
 
   fmt.Println("Moon Phase: " + moonDesc + " (" + percent + "% illuminated)")
