@@ -36,7 +36,7 @@ import (
 
 func GetVersion() string {
 
-	const VERS = "1.3.0"
+	const VERS = "2.0.0"
 
 	return VERS
 
