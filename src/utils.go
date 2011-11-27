@@ -4,7 +4,7 @@
 
 	Written and maintained by Stephen Ramsay
 
-	Last Modified: Sun Nov 27 12:49:54 CST 2011
+	Last Modified: Sun Nov 27 14:04:35 CST 2011
 
 	Copyright © 2011 by Stephen Ramsay
 
@@ -44,7 +44,7 @@ func GetVersion() string {
 
 func Options() string {
 
-	optarg.Add("s", "station", "Weather station.  May be indicated using city, state, CITY,STATE, country, (US or Canadian) zipcode, 3- or 4-letter airport code, or LAT,LONG", "KLNK")
+	optarg.Add("s", "station", "Weather station.  May be indicated using \"city, state-abbreviation\", (US or Canadian) zipcode, 3- or 4-letter airport code, or LAT,LONG", "KLNK")
 	optarg.Add("h", "help", "Print this message", false)
 	optarg.Add("V", "version", "Print version number", false)
 
@@ -80,7 +80,7 @@ func Options() string {
 	}
 
 	// Trap for city-state combinations (e.g. "San Francisco, CA") and
-	// turn it into "CA/SanFranciso"
+	// make them URL-friendly (e.g. "CA/SanFranciso")
 
 	cityStatePattern := regexp.MustCompile("([A-Za-z ]+), ([A-Z][A-Z])")
 	cityState := cityStatePattern.FindStringSubmatch(station)

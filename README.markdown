@@ -31,7 +31,7 @@ Conditions is written in [Go](http://golang.org), and thus requires a working Go
 	cd src
 	make
 
-Note that the default location for conditions is "KLNK" (Lincoln, NE).  You can change this by altering the contents of this line in each file:
+Note that the default location for conditions is "KLNK" (Lincoln, NE).  You can change this by altering the contents of this line in src/utils.go.
 
 	var station = "KLNK"
 
