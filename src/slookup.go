@@ -29,95 +29,66 @@
 package main
 
 import (
+	"./utils"
 	"fmt"
 	"http"
-	"os"
-	"strings"
-	"xml"
-	"github.com/jteeuwen/go-pkg-optarg"
+	"json"
+	"io/ioutil"
 )
 
-const URLstem = "http://api.wunderground.com/auto/wui/geo/GeoLookupXML/index.xml?query="
+type Conditions struct {
+	Location Location
+}
 
-const VERS = "1.2.1"
+type Location struct {
+	Nearby_weather_stations Nearby_weather_stations
+}
 
-type Station struct {
-	City		string
-	Icao		string
+type Nearby_weather_stations struct {
+	Airport Airport
 }
 
 type Airport struct {
-	Station []Station "nearby_weather_stations>airport>station"
+	Station []Station
+}
+
+type Station struct {
+	City	string
+	Icao	string
 }
 
 func main() {
 
-	optarg.Add("s", "location", "Location.  May be indicated using city, state, CITY,STATE, country, (US or Canadian) zipcode, 3- or 4-letter airport code, or LAT,LONG", "Lincoln, NE")
-	optarg.Add("h", "help", "Print this message", false)
-	optarg.Add("V", "version", "Print version number", false)
+	var stationId = utils.Options()
+	var URL	string
 
-	var location = "Lincoln,NE"
-	var help, version bool
-	var URL string
-
-	for opt := range optarg.Parse() {
-		switch opt.ShortName {
-		case "s":
-			location = opt.String()
-		case "h":
-			help = opt.Bool()
-		case "V":
-			version = opt.Bool()
-		}
-	}
-
-	if help {
-		optarg.Usage()
-		os.Exit(0)
-	}
-
-	if version {
-		fmt.Println("conditions " + VERS)
-		fmt.Println("Copyright (C) 2011 by Stephen Ramsay")
-		fmt.Println("Data courtesy of Weather Underground, Inc.")
-		fmt.Println("is subject to Weather Underground Data Feed")
-		fmt.Println("Terms of Service.  The program itself is free")
-		fmt.Println("software, and you are welcome to redistribute")
-		fmt.Println("it under certain conditions.  See LICENSE for")
-		fmt.Println("details.")
-		os.Exit(0)
-	}
-
-	// Temporarily trim whitespace locations with spaces
-	// (e.g. "New York, NY" -> "NewYork,NY")
-	var location_components = strings.Fields(location)
-	var location_id = ""
-	for i := 0; i < len(location_components); i++ {
-		location_id = location_id + location_components[i]
-	}
-
-	URL = URLstem + location_id
+	URL = utils.BuildURL("geolookup", stationId)
 
 	res, err := http.Get(URL)
 
+	var b []byte
+	var obs Conditions
+
 	if err == nil {
-		var airport Airport
-		xmlErr := xml.Unmarshal(res.Body, &airport)
-		checkError(xmlErr)
-		printWeather(&airport)
+		b, err = ioutil.ReadAll(res.Body)
 		res.Body.Close()
+		jsonErr := json.Unmarshal(b, &obs)
+		utils.CheckError(jsonErr)
+		printWeather(&obs)
 	}
+
 }
 
-func printWeather(airport *Airport) {
-	for i := 0; i < len(airport.Station); i++ {
-		fmt.Println(airport.Station[i].City + ": " + airport.Station[i].Icao)
-	}
-}
+func printWeather(obs *Conditions) {
 
-func checkError(err os.Error) {
-	if err != nil {
-		fmt.Println(os.Stderr, "Fatal error ", err.String())
-		os.Exit(1)
+	var stationNum = len(obs.Location.Nearby_weather_stations.Airport.Station)
+	var stations	 = obs.Location.Nearby_weather_stations.Airport
+
+	if stationNum == 0 {
+		fmt.Println("No area stations")
+	} else {
+		for i := 0; i < stationNum; i++ {
+			fmt.Println(stations.Station[i].City + ": " + stations.Station[i].Icao)
+		}
 	}
 }

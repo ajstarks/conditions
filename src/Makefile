@@ -38,7 +38,7 @@ alerts.o: utils.o
 slookup: slookup.o
 	$(L) -o slookup slookup.$(SFX)
 
-slookup.o:
+slookup.o: utils.o
 	$(C) slookup.go
 
 utils.o:

@@ -63,6 +63,7 @@ func main() {
 	URL = utils.BuildURL("forecast", stationId)
 
 	res, err := http.Get(URL)
+
 	var b []byte
 	var obs Conditions
 

@@ -78,8 +78,8 @@ func Options() string {
 		os.Exit(0)
 	}
 
-	// Temporarily trim whitespace locations with spaces
-	// (e.g. "New York, NY" -> "NewYork,NY")
+	// This is wrong.  It should use a regex to trap for
+	// "San Francisco, CA" and turn it into "CA/SanFranciso"
 	var stationComponents = strings.Fields(station)
 	var stationId = ""
 	for i := 0; i < len(stationComponents); i++ {
