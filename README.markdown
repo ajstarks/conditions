@@ -2,8 +2,6 @@
 Conditions
 ==========
 
-__[Weather Alert: Conditions is currently broken, since Wunderground has changed their API.  I'll issue an all clear as soon as I get the code in order.]__
-
 Conditions is a suite of small command-line applications that retrieve weather data from [Weather Underground](http://www.wunderground.com).  The programs are designed to be extremely fast and generally conformant with the [UNIX philosophy](http://en.wikipedia.org/wiki/Unix_philosophy).
 
 Description
