@@ -23,7 +23,7 @@ Conditions consists of forecast command-line applications.
 	
 All three commands understand the following switches:
 
-* -s location (which can be a city, a state, a (U.S. or Canadian zip code), a 3- or 4-letter airport code, or lat,long).  Default location is KLNK (Lincoln, NE).  See note in "Building Conditions" below.
+* -s location (which can be a "city, state-abbreviation/country", a (U.S. or Canadian) zip code, a 3- or 4-letter airport code, or "lat,long").  Default location is KLNK (Lincoln, NE).  See note in "Building Conditions" below.
 * -h help
 * -V version
 
