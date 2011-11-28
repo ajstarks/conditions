@@ -42,7 +42,7 @@ Note that the default location for conditions is "KLNK" (Lincoln, NE).  You can 
 License(s)
 ---------
 
-Conditions is written and maintained by Stephen Ramsay.
+Conditions is written and maintained by Stephen Ramsay (sramsay{dot}unl{at}gmail{dot}com).
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
@@ -55,4 +55,4 @@ Data courtesy of Weather Underground, Inc. (WUI) is subject to the [Weather Unde
 Thanks
 ------
 
-Conditions was heavily inspired -- and indeed, might be considered a clean-room implementation of -- Jeremy Stanley's [weather](http://fungi.yuggoth.org/weather/).  This is a lovely Python script that does more-or-less the same thing as conditions.  I reimplemented the system because Stanley's had stopped working and I wanted a program that was faster.
+Conditions was heavily inspired -- and indeed, might be considered a clean-room implementation of -- Jeremy Stanley's [weather](http://fungi.yuggoth.org/weather/).  This is a lovely Python script that does more-or-less the same thing as conditions.  I reimplemented the system because Stanley's had stopped working (for me) and I wanted a program that was faster.  I also wanted a system that takes advantage of Weather Underground's rich, json API.
