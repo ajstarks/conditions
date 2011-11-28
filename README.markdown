@@ -21,7 +21,7 @@ Conditions consists of forecast command-line applications.
 
 * _almanac_ reports average high and low temperatures, as well as record temperatures for the day.
 	
-All three commands understand the following switches:
+All six commands understand the following switches:
 
 * -s location (which can be a "city, state-abbreviation/country", a (U.S. or Canadian) zip code, a 3- or 4-letter airport code, or "lat,long").  Default location is KLNK (Lincoln, NE).  See note in "Building Conditions" below.
 * -h help
