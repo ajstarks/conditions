@@ -16,6 +16,10 @@ Conditions consists of forecast command-line applications.
 * _alerts_ reports any active weather alerts.
 
 * _slookup_ allows you to determine the codes for the various weather stations in a particular area.
+
+* _astronomy_ reports sunrise, sunset, and lunar phase.
+
+* _almanac_ reports average high and low temperatures, as well as record temperatures for the day.
 	
 All three commands understand the following switches:
 
