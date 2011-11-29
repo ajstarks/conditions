@@ -50,12 +50,12 @@ Conditions is written in [Go](http://golang.org), and thus requires a working Go
 If you don't have one of those, you'll need to install.  Detailed instructions are [here](http://golang.org/doc/install.html).  But in brief:
 
 	hg clone -u release https://go.googlecode.com/hg/ go
-  cd go/src
-  ./all.bash
-  export GOROOT=/path/to/go
-  export GOARCH=amd64
-  export GOOS=linux
-  export PATH=${GOROOT}/bin:$PATH
+	cd go/src
+	./all.bash
+	export GOROOT=/path/to/go
+	export GOARCH=amd64
+	export GOOS=linux
+	export PATH=${GOROOT}/bin:$PATH
 
 (substituting 386 for amd64, and darwin|freebsd for linux as appropriate).
 
