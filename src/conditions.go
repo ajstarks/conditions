@@ -68,7 +68,7 @@ func main() {
 
   key,_ := utils.GetConf()
 
-  var stationId = utils.Options(key)
+  var stationId = utils.Options()
   var URL string
 
   URL = utils.BuildURL("conditions", stationId, key)

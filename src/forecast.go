@@ -57,10 +57,12 @@ type Forecastday struct {
 
 func main() {
 
+  key,_ := utils.GetConf()
+
   var stationId = utils.Options()
   var URL string
 
-  URL = utils.BuildURL("forecast", stationId)
+  URL = utils.BuildURL("forecast", stationId, key)
 
   res, err := http.Get(URL)
 

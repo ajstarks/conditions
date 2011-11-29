@@ -56,12 +56,16 @@ func GetConf() (string,string) {
   var b []byte
   var conf config
 
-    b, err := ioutil.ReadFile("/home/sramsay/.condrc")
+
+    var confFile = os.Getenv("HOME") + "/.condrc"
+    b, err := ioutil.ReadFile(confFile)
 
     if err == nil {
       jsonErr := json.Unmarshal(b,  &conf)
       CheckError(jsonErr)
-
+    } else {
+      fmt.Println("You must create a .condrc file in $HOME.")
+      os.Exit(1)
     }
 
   return conf.Key, conf.Station
@@ -74,7 +78,12 @@ func Options() string {
   optarg.Add("h", "help", "Print this message", false)
   optarg.Add("V", "version", "Print version number", false)
 
-  var station = "KLNK"
+  _,station := GetConf()
+
+  if station == "" {
+    station = "KLNK"
+  }
+
   var help, version bool
 
   for opt := range optarg.Parse() {
@@ -129,7 +138,7 @@ func BuildURL(infoType string, stationId string, key string) string {
 
   var URL string
 
-  URL = URLstem + key + infoType + query + stationId + format
+  URL = URLstem + key + "/" + infoType + query + stationId + format
 
   return URL
 

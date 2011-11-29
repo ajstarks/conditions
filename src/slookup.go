@@ -59,10 +59,12 @@ type Station struct {
 
 func main() {
 
+  key,_ := utils.GetConf()
+
   var stationId = utils.Options()
   var URL string
 
-  URL = utils.BuildURL("geolookup", stationId)
+  URL = utils.BuildURL("geolookup", stationId, key)
 
   res, err := http.Get(URL)
 

@@ -68,10 +68,12 @@ type Record struct {
 
 func main() {
 
+  key,_ := utils.GetConf()
+
   var stationId = utils.Options()
   var URL string
 
-  URL = utils.BuildURL("almanac", stationId)
+  URL = utils.BuildURL("almanac", stationId, key)
 
   res, err := http.Get(URL)
   var b []byte

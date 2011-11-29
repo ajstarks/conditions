@@ -48,10 +48,12 @@ type Alerts struct {
 
 func main() {
 
+  key,_ := utils.GetConf()
+
   var stationId = utils.Options()
   var URL string
 
-  URL = utils.BuildURL("alerts", stationId)
+  URL = utils.BuildURL("alerts", stationId, key)
 
   res, err := http.Get(URL)
   var b []byte

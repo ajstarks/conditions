@@ -61,10 +61,12 @@ type Sunset struct {
 
 func main() {
 
+  key,_ := utils.GetConf()
+
   var stationId = utils.Options()
   var URL string
 
-  URL = utils.BuildURL("astronomy", stationId)
+  URL = utils.BuildURL("astronomy", stationId, key)
 
   res, err := http.Get(URL)
   var b []byte
