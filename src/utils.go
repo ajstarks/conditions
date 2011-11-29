@@ -28,9 +28,11 @@ package utils
 
 import (
   "fmt"
+  "io/ioutil"
   "os"
   "regexp"
   "strings"
+  "json"
   "github.com/jteeuwen/go-pkg-optarg"
 )
 
@@ -39,6 +41,30 @@ func GetVersion() string {
   const VERS = "2.0.0"
 
   return VERS
+
+}
+
+func GetConf() (string,string) {
+
+  type config struct {
+
+    Key  string
+    Station string
+
+  }
+
+  var b []byte
+  var conf config
+
+    b, err := ioutil.ReadFile("/home/sramsay/.condrc")
+
+    if err == nil {
+      jsonErr := json.Unmarshal(b,  &conf)
+      CheckError(jsonErr)
+
+    }
+
+  return conf.Key, conf.Station
 
 }
 
@@ -95,15 +121,15 @@ func Options() string {
 }
 
 
-func BuildURL(infoType string, stationId string) string {
+func BuildURL(infoType string, stationId string, key string) string {
 
-  const URLstem = "http://api.wunderground.com/api/bc5deaeccb858c43/"
+  const URLstem = "http://api.wunderground.com/api/"
   const query   = "/q/"
   const format  = ".json"
 
   var URL string
 
-  URL = URLstem + infoType + query + stationId + format
+  URL = URLstem + key + infoType + query + stationId + format
 
   return URL
 

@@ -66,13 +66,15 @@ type Location struct {
 
 func main() {
 
-  var stationId = utils.Options()
+  key,_ := utils.GetConf()
+
+  var stationId = utils.Options(key)
   var URL string
 
-  URL = utils.BuildURL("conditions", stationId)
+  URL = utils.BuildURL("conditions", stationId, key)
 
   res, err := http.Get(URL)
-  var b []byte;
+  var b []byte
   var obs Conditions
 
   if err == nil {
