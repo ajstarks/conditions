@@ -9,7 +9,7 @@ Conditions is a suite of small command-line applications that retrieve weather d
 Description
 -----------
 
-Conditions consists of forecast command-line applications.
+Conditions consists of six command-line applications.
 
 * _conditions_ reports the current weather conditions.
 
