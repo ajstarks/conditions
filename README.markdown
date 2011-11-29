@@ -47,7 +47,7 @@ Conditions is written in [Go](http://golang.org), and thus requires a working Go
 	cd conditions/src
 	make
 
-If you don't have one of those, you'll need to install.  Detailed instructions are [here](http://golang.org/doc/install.html).  But in brief:
+If you don't have one of those, you'll need to install it.  Detailed instructions are [here](http://golang.org/doc/install.html).  But in brief:
 
 	hg clone -u release https://go.googlecode.com/hg/ go
 	cd go/src
