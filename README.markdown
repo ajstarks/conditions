@@ -2,6 +2,8 @@
 Conditions
 ==========
 
+Version 2.0.0.
+
 Conditions is a suite of small command-line applications that retrieve weather data from [Weather Underground](http://www.wunderground.com).  The programs are designed to be extremely fast and generally conformant with the [UNIX philosophy](http://en.wikipedia.org/wiki/Unix_philosophy).
 
 Description
@@ -23,9 +25,16 @@ Conditions consists of forecast command-line applications.
 	
 All six commands understand the following switches:
 
-* -s location (which can be a "city, state-abbreviation/country", a (U.S. or Canadian) zip code, a 3- or 4-letter airport code, or "lat,long").  Default location is KLNK (Lincoln, NE).  See note in "Building Conditions" below.
+* -s location (which can be a "city, state-abbreviation/country", a (U.S. or Canadian) zip code, a 3- or 4-letter airport code, or "lat,long").
 * -h help
 * -V version
+
+To use conditions, you need to obtain an API key from Weather Underground [http://www.wunderground.com/weather/api/](http://www.wunderground.com/weather/api/).  You should then add that key and the name of your default weather station to $HOME/.condrc:
+
+  {
+    "key": "YOUR_API_KEY",
+    "station": "Lincoln, NE"
+  }
 
 Building Conditions
 -------------------
@@ -34,10 +43,6 @@ Conditions is written in [Go](http://golang.org), and thus requires a working Go
 
 	cd src
 	make
-
-Note that the default location for conditions is "KLNK" (Lincoln, NE).  You can change this by altering the contents of this line in src/utils.go.
-
-	var station = "KLNK"
 
 License(s)
 ---------
