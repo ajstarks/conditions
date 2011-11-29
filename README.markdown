@@ -36,13 +36,30 @@ To use conditions, you need to obtain an API key from Weather Underground [http:
 	  "station": "Lincoln, NE"
 	}
 
+(the above is available in the conditions root directory as "condrc")
+
 Building Conditions
 -------------------
 
 Conditions is written in [Go](http://golang.org), and thus requires a working Go compiler.  Assuming you have one of those:
 
-	cd src
+	goinstall github.com/jteeuwen/go-pkg-optarg
+	cd conditions/src
 	make
+
+If you don't have one of those, you'll need to install.  Detailed instructions are [here](http://golang.org/doc/install.html).  But in brief:
+
+	hg clone -u release https://go.googlecode.com/hg/ go
+  cd go/src
+  ./all.bash
+  export GOROOT=/path/to/go
+  export GOARCH=amd64
+  export GOOS=linux
+  export PATH=${GOROOT}/bin:$PATH
+
+(substituting 386 for amd64, and darwin|freebsd for linux as appropriate).
+
+Then proceed with the above.
 
 License(s)
 ---------
