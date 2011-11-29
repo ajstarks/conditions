@@ -1,5 +1,5 @@
 
-PROGS = opt-arg conditions forecast alerts slookup astronomy almanac
+PROGS = conditions forecast alerts slookup astronomy almanac
 PREFIX = /usr/local/bin
 GOARCH := $(GOARCH)
 GOPATH := $(PWD)
