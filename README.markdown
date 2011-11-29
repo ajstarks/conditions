@@ -31,10 +31,10 @@ All six commands understand the following switches:
 
 To use conditions, you need to obtain an API key from Weather Underground [http://www.wunderground.com/weather/api/](http://www.wunderground.com/weather/api/).  You should then add that key and the name of your default weather station to $HOME/.condrc:
 
-  {
-    "key": "YOUR_API_KEY",
-    "station": "Lincoln, NE"
-  }
+	{
+	  "key": "YOUR_API_KEY",
+	  "station": "Lincoln, NE"
+	}
 
 Building Conditions
 -------------------
