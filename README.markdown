@@ -64,7 +64,7 @@ Then proceed with the above.
 License(s)
 ---------
 
-Conditions is written and maintained by Stephen Ramsay (sramsay{dot}unl{at}gmail{dot}com).
+Conditions is written and maintained by [Stephen Ramsay](http://lenz.unl.edu/) (sramsay{dot}unl{at}gmail{dot}com).
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
