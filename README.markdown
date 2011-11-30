@@ -43,7 +43,6 @@ Building Conditions
 
 Conditions is written in [Go](http://golang.org), and thus requires a working Go compiler.  Assuming you have one of those:
 
-	goinstall github.com/jteeuwen/go-pkg-optarg
 	cd conditions/src
 	make
 
