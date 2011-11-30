@@ -38,7 +38,7 @@ import (
 
 // GetVersion returns the version of the package
 func GetVersion() string {
-	const VERS = "2.0.0"
+	const VERS = "2.0.1"
 	return VERS
 }
 
