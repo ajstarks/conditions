@@ -2,7 +2,7 @@
 Conditions
 ==========
 
-Version 2.0.0.
+Version 2.0.1.
 
 Conditions is a suite of small command-line applications that retrieve weather data from [Weather Underground](http://www.wunderground.com).  The programs are designed to be extremely fast and generally conformant with the [UNIX philosophy](http://en.wikipedia.org/wiki/Unix_philosophy).
 
