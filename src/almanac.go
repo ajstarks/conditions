@@ -12,12 +12,12 @@
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation; either version 3, or (at your option) any
   later version.
-  
+
   alerts is distributed in the hope that it will be useful, but
   WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
   or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
   for more details.
-  
+
   You should have received a copy of the GNU General Public License
   along with alerts; see the file COPYING.  If not see
   <http://www.gnu.org/licenses/>
@@ -27,85 +27,70 @@ package main
 
 import (
   "./utils"
-  "fmt"
-  "http"
-  "json"
-  "io/ioutil"
+	"fmt"
+	"json"
 )
 
-
 type Conditions struct {
-  Almanac Almanac
+	Almanac Almanac
 }
 
 type Almanac struct {
-  Temp_high Temp_high
-  Temp_low  Temp_low
+	Temp_high Temp_high
+	Temp_low  Temp_low
 }
 
 type Temp_high struct {
-  Normal  Normal
-  Record  Record
-  Recordyear  string
+	Normal     Normal
+	Record     Record
+	Recordyear string
 }
 
 type Temp_low struct {
-  Normal  Normal
-  Record  Record
-  Recordyear  string
+	Normal     Normal
+	Record     Record
+	Recordyear string
 }
 
 type Normal struct {
-  F string
-  C string
+	F string
+	C string
 }
 
 type Record struct {
-  F string
-  C string
+	F string
+	C string
 }
-
 
 func main() {
-
-  key,_ := utils.GetConf()
-
-  var stationId = utils.Options()
-  var URL string
-
-  URL = utils.BuildURL("almanac", stationId, key)
-
-  res, err := http.Get(URL)
-  var b []byte
-  var obs Conditions
-
-  if err == nil {
-    b, err = ioutil.ReadAll(res.Body)
-    res.Body.Close()
-    jsonErr := json.Unmarshal(b, &obs)
-    utils.CheckError(jsonErr)
-    printWeather(&obs, stationId)
-  }
+	var obs Conditions
+	key, _ := utils.GetConf()
+	stationId := utils.Options()
+	url := utils.BuildURL("almanac", stationId, key)
+	b, err := utils.Fetch(url)
+	utils.CheckError(err)
+	jsonErr := json.Unmarshal(b, &obs)
+	utils.CheckError(jsonErr)
+	printWeather(&obs, stationId)
 }
-
 
 func printWeather(obs *Conditions, stationId string) {
 
-  normalHighF := obs.Almanac.Temp_high.Normal.F
-  normalHighC := obs.Almanac.Temp_high.Normal.C
-  normalLowF  := obs.Almanac.Temp_low.Normal.F
-  normalLowC  := obs.Almanac.Temp_low.Normal.C
+	normalHighF := obs.Almanac.Temp_high.Normal.F
+	normalHighC := obs.Almanac.Temp_high.Normal.C
+	normalLowF := obs.Almanac.Temp_low.Normal.F
+	normalLowC := obs.Almanac.Temp_low.Normal.C
 
-  recordHighF := obs.Almanac.Temp_high.Record.F
-  recordHighC := obs.Almanac.Temp_high.Record.C
-  recordHYear := obs.Almanac.Temp_high.Recordyear
-  recordLowF  := obs.Almanac.Temp_low.Record.F
-  recordLowC  := obs.Almanac.Temp_low.Record.C
-  recordLYear := obs.Almanac.Temp_low.Recordyear
+	recordHighF := obs.Almanac.Temp_high.Record.F
+	recordHighC := obs.Almanac.Temp_high.Record.C
+	recordHYear := obs.Almanac.Temp_high.Recordyear
+	recordLowF := obs.Almanac.Temp_low.Record.F
+	recordLowC := obs.Almanac.Temp_low.Record.C
+	recordLYear := obs.Almanac.Temp_low.Recordyear
 
-  fmt.Println("Normal high: " + normalHighF + " F (" + normalHighC + " C)")
-  fmt.Println("Record high: " + recordHighF + " F (" + recordHighC + " C) [" + recordHYear + "]")
- fmt.Println("Normal low: " + normalLowF + " F (" + normalLowC + " C)")
-  fmt.Println("Record low: " + recordLowF + " F (" + recordLowC + " C) [" + recordLYear + "]")
+	fmt.Printf("Normal high: %s\u00B0 F (%s\u00B0 C)\n", normalHighF, normalHighC)
+	fmt.Printf("Record high: %s\u00B0 F (%s\u00B0 C) [%s]\n", recordHighF, recordHighC, recordHYear)
+	fmt.Printf("Normal low : %s\u00B0 F (%s\u00B0 C)\n", normalLowF, normalLowC)
+	fmt.Printf("Record low : %s\u00B0 F (%s\u00B0 C) [%s]\n", recordLowF, recordLowC, recordLYear)
 
 }
