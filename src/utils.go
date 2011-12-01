@@ -33,13 +33,13 @@ import (
 	"regexp"
 	"strings"
 	"json"
+	"http"
 	"flag"
 )
 
 // GetVersion returns the version of the package
 func GetVersion() string {
-	const VERS = "2.0.1"
-	return VERS
+	return "2.0.2"
 }
 
 // GetConf returns the API key and weather station from
@@ -79,7 +79,7 @@ func Options() string {
 		sconf = "KLNK"
 	}
 
-	flag.BoolVar(&help, "h", false, "print this message")
+	flag.BoolVar(&help, "h", false, "Print this message")
 	flag.BoolVar(&version, "v", false, "Print version number")
 	flag.StringVar(&station, "s", sconf, "Weather station: \"city, state-abbreviation\", (US or Canadian) zipcode, 3- or 4-letter airport code, or LAT,LONG")
 	flag.Parse()
@@ -123,6 +123,19 @@ func BuildURL(infoType string, stationId string, key string) string {
 	const format = ".json"
 
 	return URLstem + key + "/" + infoType + query + stationId + format
+}
+
+// Fetch does URL processing
+func Fetch(url string) ([]byte, os.Error) {
+	res, err := http.Get(url)
+	CheckError(err)
+	if res.StatusCode != 200 {
+		fmt.Fprintf(os.Stderr, "Bad HTTP Status: %d\n", res.StatusCode)
+		return nil, err
+	}
+	b, err := ioutil.ReadAll(res.Body)
+	res.Body.Close()
+	return b, err
 }
 
 // CheckError exits on error with a message
