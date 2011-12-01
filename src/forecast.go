@@ -31,62 +31,44 @@ package main
 
 import (
   "./utils"
-  "fmt"
-  "http"
-  "json"
-  "io/ioutil"
+	"fmt"
+	"json"
 )
 
 type Conditions struct {
-  Forecast Forecast
+	Forecast Forecast
 }
 
 type Forecast struct {
-  Txt_forecast Txt_forecast
+	Txt_forecast Txt_forecast
 }
 
 type Txt_forecast struct {
-  Date  string
-  Forecastday []Forecastday
+	Date        string
+	Forecastday []Forecastday
 }
 
 type Forecastday struct {
-  Title   string
-  Fcttext string
+	Title   string
+	Fcttext string
 }
 
 func main() {
-
-  key,_ := utils.GetConf()
-
-  var stationId = utils.Options()
-  var URL string
-
-  URL = utils.BuildURL("forecast", stationId, key)
-
-  res, err := http.Get(URL)
-
-  var b []byte
-  var obs Conditions
-
-  if err == nil {
-    b, err = ioutil.ReadAll(res.Body)
-    res.Body.Close()
-    jsonErr := json.Unmarshal(b, &obs)
-    utils.CheckError(jsonErr)
-    printWeather(&obs, stationId)
-  }
+	var obs Conditions
+	key, _ := utils.GetConf()
+	stationId := utils.Options()
+	url := utils.BuildURL("forecast", stationId, key)
+	b, err := utils.Fetch(url)
+	utils.CheckError(err)
+	jsonErr := json.Unmarshal(b, &obs)
+	utils.CheckError(jsonErr)
+	printWeather(&obs, stationId)
 }
 
 func printWeather(obs *Conditions, stationId string) {
-
-  var forecastNum = len(obs.Forecast.Txt_forecast.Forecastday)
-  var forecasts   = obs.Forecast.Txt_forecast.Forecastday
-  var date        = obs.Forecast.Txt_forecast.Date
-
-  fmt.Println("Forecast for " + stationId)
-  fmt.Println("Issued at " + date)
-  for i := 0; i < forecastNum; i++ {
-    fmt.Println(forecasts[i].Title + ": " + forecasts[i].Fcttext)
-  }
+	t := obs.Forecast.Txt_forecast
+	fmt.Printf("Forecast for %s\nIssued at %s\n", stationId, t.Date)
+	for _, f := range t.Forecastday {
+		fmt.Printf("%s: %s\n", f.Title, f.Fcttext)
+	}
 }
